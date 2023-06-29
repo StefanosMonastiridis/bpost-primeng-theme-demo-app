@@ -1,6 +1,15 @@
-# Sakai
+# PrimeNg BPOST Theme demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) 
+Based on Sakai template https://www.primefaces.org/sakai-free-angular-admin-template/
+
+## Install
+This project will be updating in regular basis. Clone the repo instead of downloading to keep it up to date.
+
+## Using the BPOST theme in other projects
+
+In order to use the bpost theme in other projects, you will have to copy and paste the theme-base and bpost folders and link the styles in styles scss
+
 
 ## Development server
 
@@ -25,3 +34,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
