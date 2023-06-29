@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+
+$gutter: 1rem; //for primeflex grid system
+@import "assets/layout/styles/layout/layout.scss";
+
+/* PrimeNG */
+@import "assets/themes/bpost/theme.scss";
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeflex/primeflex.scss";
+@import "../node_modules/primeicons/primeicons.css";
+
+
+/* Demos */
+@import "assets/demo/styles/flags/flags.css";
+@import "assets/demo/styles/badges.scss";
+@import "assets/demo/styles/code.scss";
+
+.color-sample{
+  
+    margin-top:1rem;
+    width: 24rem;
+    padding: 0.5rem;
+}
+.spacing-sample{
+    background-color: $surfaceContainerLowColor;
+}
+.typo-sample{
+   
+    padding: 0.5rem;
+}
+
+.code-snippet{
+    background-color: $surfaceContainerInverseColor;
+    color:white;
+}
+
+
+.primary-sample{
+    background-color: $primaryColor;
+    color: white;
+}
+.primaryContainer-sample{
+    background-color: $primaryContainerColor;
+    color: $onPrimaryContainerColor;
+    border-color: $onPrimaryContainerColor;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.secondary-sample{
+    background-color: $secondaryColor;
+    color: white;
+}
+
+.secondaryContainer-sample{
+    background-color: $secondaryContainerColor;
+    color: $onSecondaryContainerColor;
+    border-color: $secondaryBorderColor;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+.info-sample{
+    background-color: $infoColor;
+    color: white;
+}
+
+.infoContainer-sample{
+    background-color: $infoContainerColor;
+    color: $onInfoContainerColor;
+    border-color: $onInfoContainerColor;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.validation-sample{
+    background-color: $validationColor;
+    color: white;
+}
+
+.validationContainer-sample{
+    background-color: $validationContainerColor;
+    color: $onValidationContainerColor;
+    border-color: $validationBorderColor;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.warning-sample{
+    background-color: $warningColor;
+    color: white;
+}
+
+.warningContainer-sample{
+    background-color: $warningContainerColor;
+    color: $onWarningContainerColor;
+    border-color: $warningBorderColor;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.error-sample{
+    background-color: $errorColor;
+    color: white;
+}
+
+.errorContainer-sample{
+    background-color: $errorContainerColor;
+    color: $onErrorContainerColor;
+    border-color: $errorBorderColor;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.surfaceColor-sample{
+    background-color: $surfaceColor;
+  
+}
+
+.surfaceDimColor-sample{
+    background-color: $surfaceDimColor;
+    color: $onSurfaceColor;
+}
+
+.surfaceInverseColor-sample{
+    background-color: $surfaceContainerInverseColor;
+    color: white;
+}
+
+.onSurfaceInverseColor{
+    color: $onInverseContainerColor;
+    
+}
+
+.surfaceLowestColor-sample{
+    background-color: $surfaceContainerLowestColor;
+   
+}
+
+.surfaceHighColor-sample{
+    background-color: $surfaceContainerHighColor;
+    color: $onSurfaceColor;
+}
+
+.surfaceHighestColor-sample{
+    background-color: $surfaceContainerHighestColor;
+    color: $onSurfaceColor;
+}
+
+.outlineColor-sample{
+    border: 0.2rem solid $outlineColor;
+    height: 10rem;
+}
+
+.outlineVariantColor-sample{
+    border: 0.2rem solid $outlineVariantColor;
+    height: 10rem;
+}
+
+.outlineVariantLighterColor-sample{
+    border: 0.2rem solid $outlineVariantLighterColor;
+    height: 10rem;
+}
+

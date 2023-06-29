@@ -1,0 +1,87 @@
+ h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem 0 1rem 0;
+    font-family: inherit;
+    font-weight: 500;
+    /*line-height: 1.2;*/
+   /* color: var(--surface-700);*/
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+
+h1{
+    /*display*/
+    font-size: 4.125rem;
+    line-height: 4.75rem;
+}
+
+h2 {
+     /*headline-1*/
+    font-size: 2.625rem;
+    line-height: 3.25rem;
+}
+
+h3 {
+     /*headline-2*/
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+}
+
+h4 {
+     /*headline-3*/
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+h5 {
+     /*headline-4*/
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+
+
+mark {
+    background: #FFF8E1;
+    padding: .25rem .4rem;
+    border-radius: $borderRadius;
+    font-family: monospace;
+}
+
+blockquote {
+    margin: 1rem 0;
+    padding: 0 2rem;
+    border-left: 4px solid #90A4AE;
+}
+
+hr {
+    border-top: solid var(--surface-border);
+    border-width: 1px 0 0 0;
+    margin: 1rem 0;
+}
+
+p {
+    margin: 0 0 1rem 0;
+    
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.text-sm{
+    line-height: 1.25rem;
+}
+
+.label{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+body{
+    line-height: 1.5rem;
+}
+

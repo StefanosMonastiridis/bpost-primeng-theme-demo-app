@@ -1,0 +1,386 @@
+
+<div class="container p-4">
+    <h2>PrimeIcons</h2>
+<p class="w-8">PrimeIcons are the default icons provided with PrimeNG.</p>
+   
+        <h3>Download</h3>
+<pre class="app-code"><code>npm install primeicons --save</code></pre>
+<p>Primeicons are installed by default with PrimeNG</p>
+    <h3>Getting Started</h3>
+    <p>PrimeIcons use the <strong>pi pi-&#123;icon&#125;</strong> syntax such as <strong>pi pi-check</strong>.
+        A standalone icon can be displayed using an element such as <i>i</i> or <i>span</i></p>
+
+<pre class="app-code"><code>&lt;i class="pi pi-check"&gt;&lt;/i&gt;
+&lt;i class="pi pi-times"&gt;&lt;/i&gt;</code></pre>
+    
+    <i class="pi pi-check" style="margin-right: .5rem"></i>
+    <i class="pi pi-times"></i>
+
+    <h3>Size</h3>
+    <p>Size of the icons can easily be changed using the font-size classes of PrimeFlex.</p>
+
+<pre class="app-code"><code>&lt;i class="pi pi-check"&gt;&lt;/i&gt;</code></pre>
+
+    <i class="pi pi-check"></i>
+
+<pre class="app-code"><code>&lt;i class="pi pi-check text-2xl" &gt;&lt;/i&gt;</code></pre>
+
+    <i class="pi pi-check text-2xl"></i>
+
+    <h3>Spinning Animation</h3>
+    <p>Special pi-spin class applies infinite rotate to an icon.</p>
+    
+<pre class="app-code"><code>&lt;i class="pi pi-spin pi-spinner text-2xl"&gt;&lt;/i&gt;</code></pre>
+    
+    <i class="pi pi-spin pi-spinner text-2xl"></i>
+
+    <h3>List of Icons</h3>
+    <p>Here is the current list of PrimeIcons, more icons will be added periodically. You may also <a class="text-primary hover:underline" href="https://github.com/primefaces/primeicons/issues">request new icons</a> at the issue tracker.</p>
+    <div>
+        <input class="icon-filter" (input)="onFilter($event)" pInputText placeholder="Search an icon" class="w-full p-3 mt-3 mb-5 w-full p-3 mt-3 mb-5">
+    </div>
+
+    <div class="grid text-center">
+        <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5" *ngFor="let icon of filteredIcons">
+            <i class="text-2xl pi pi-{{icon.properties.name}}"></i>
+            <div>pi-{{icon.properties.name}}</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-4 p-4">
+    <h2>BPOST icons</h2>
+    <div class="w-8">
+<p>PrimeIcons are complemented by sets of custom icons designed for the needs of BPOST applications. These sets are:</p>
+<ul>
+<li><span class="font-medium">Action icons:</span> used to represent UI actions such as show, hide, close etc</li>
+<li><span class="font-medium">Brand icons:</span> specifically designed to enhance the overall bpost customer experience, providing a  friendly look and feel. Brand icons are furthe organised in the following categories
+<ul>
+    <li> Locations </li>
+    <li> Delivery status </li>
+    <li> Lockers </li>
+    <li> Parcel and mail </li>
+    <li> Payment and security</li>
+    <li> People</li>
+</ul>
+</li>
+</ul>
+</div>
+    <h3>Installation</h3>
+    <p>Action icons are included in the bpost-theme folder as icon fonts. In order to use you will have to import their css files in the <code>&lt;head&gt;&lt;head/&gt;</code> section of <code>index.html</code> .</p>
+    <pre class="app-code"><code>&lt;link id="bpost-action-icons" rel="stylesheet" type="text/css" href="assets/themes/bpost/icons/action/style.css"&gt;</code></pre>
+    <p class="w-8">Brand icons are included in the bpost-theme folder as SVGs. You can implement them as any image or copy their source code directly in the DOM.</p>
+    <h3>Getting Started</h3>
+    <p>Action icons use the <strong>bpost-icon bpost-&#123;icon&#125;</strong> syntax such as <strong>bpost-icon bpost-person</strong>.
+        A standalone icon can be displayed using an element such as <i>i</i> or <i>span</i></p>
+
+<pre class="app-code"><code>&lt;i class="bpost-icon bpost-person"&gt;&lt;/i&gt;
+&lt;i class="bpost-icon bpost-fingerprint"&gt;&lt;/i&gt;</code></pre>
+<h4>Action icons</h4>
+<div class="grid text-center">
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-alert text-2xl "></i>
+        <div>bpost-alert</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+         <i class="bpost-icon bpost-bin text-2xl "></i>
+        <div>bpost-bin</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-bookmark-filled text-2xl "></i>
+        <div>bpost-bookmark-filled</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-bookmark-outline text-2xl "></i>
+        <div>bpost-bookmark-outline</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-calendar text-2xl "></i>
+        <div>bpost-calendar</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-cart text-2xl "></i>
+        <div>bpost-cart</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-chat text-2xl "></i>
+        <div>bpost-chat</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-checkmark text-2xl "></i>
+        <div>bpost-checkmark</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-chevron-circle-right text-2xl "></i>
+        <div>bpost-chevron-circle-right</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-chevron-down text-2xl "></i>
+        <div>bpost-chevron-down</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-chevron-up text-2xl "></i>
+        <div>bpost-chevron-up</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-chevron-left text-2xl "></i>
+        <div>bpost-chevron-left</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-chevron-right text-2xl "></i>
+        <div>bpost-chevron-right</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-close text-2xl "></i>
+        <div>bpost-chevron-close</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-cog text-2xl "></i>
+        <div>bpost-cog</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-compare text-2xl "></i>
+        <div>bpost-compare</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-copy text-2xl "></i>
+        <div>bpost-copy</div>
+    </div>
+    
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-crop text-2xl "></i>
+        <div>bpost-crop</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-download text-2xl "></i>
+        <div>bpost-download</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-edit text-2xl "></i>
+        <div>bpost-edit</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-expand text-2xl "></i>
+        <div>bpost-expand</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-external text-2xl "></i>
+        <div>bpost-external</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-face-id text-2xl "></i>
+        <div>bpost-face-id</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-filter text-2xl "></i>
+        <div>bpost-filter</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-fingerprint text-2xl "></i>
+        <div>bpost-fingerprint</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-hide text-2xl "></i>
+        <div>bpost-hide</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-info text-2xl "></i>
+        <div>bpost-info</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-map-center text-2xl "></i>
+        <div>bpost-map-center</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-minus text-2xl "></i>
+        <div>bpost-minus</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-menu-contextual text-2xl "></i>
+        <div>bpost-menu-contextual</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-menu-search text-2xl "></i>
+        <div>bpost-menu-search</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-menu text-2xl "></i>
+        <div>bpost-menu</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-mix text-2xl "></i>
+        <div>bpost-mix</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-notification text-2xl "></i>
+        <div>bpost-notification</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-pause text-2xl "></i>
+        <div>bpost-pause</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-person text-2xl "></i>
+        <div>bpost-person-add</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-photo text-2xl "></i>
+        <div>bpost-photo</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-plus text-2xl "></i>
+        <div>bpost-plus</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-placeholder text-2xl "></i>
+        <div>bpost-placeholder</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-qr-code text-2xl "></i>
+        <div>bpost-qr-code</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-scan text-2xl "></i>
+        <div>bpost-scan</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-search text-2xl "></i>
+        <div>bpost-search</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-share text-2xl "></i>
+        <div>bpost-share</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-thumb-up text-2xl "></i>
+        <div>bpost-thumb-up</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-thumb-down text-2xl "></i>
+        <div>bpost-thumb-down</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-tooltip text-2xl "></i>
+        <div>bpost-tooltip</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-upload text-2xl "></i>
+        <div>bpost-upload</div>
+    </div>
+
+    <div class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+        <i class="bpost-icon bpost-view text-2xl "></i>
+        <div>bpost-view</div>
+    </div>
+
+
+
+
+
+</div>
+<h4>Brand icons</h4>
+<h5>Locations</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconsLocation of brandIconsLocations" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconsLocation.src}}"/>
+    <div>{{brandIconsLocation.name}}</div>
+</div>
+</div>
+<h5>Delivery status</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconsDeliveryStatus of brandIconsDeliveryStatus" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconsDeliveryStatus.src}}"/>
+    <div>{{brandIconsDeliveryStatus.name}}</div>
+</div>
+</div>
+<h5>Lockers</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconsLocker of brandIconsLockers" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconsLocker.src}}"/>
+    <div>{{brandIconsLocker.name}}</div>
+</div>
+</div>
+<h5>Documents</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconsDocument of brandIconsDocuments" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconsDocument.src}}"/>
+    <div>{{brandIconsDocument.name}}</div>
+</div>
+</div>
+<h5>Leisure</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconLeisure of brandIconsLeisure" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconLeisure.src}}"/>
+    <div>{{brandIconLeisure.name}}</div>
+</div>
+</div>
+<h5>Parcel & mail</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconParcelMail of brandIconsParcelMail" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconParcelMail.src}}"/>
+    <div>{{brandIconParcelMail.name}}</div>
+</div>
+</div>
+
+<h5>Payment & Security</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconPaymentSecurity of brandIconsPaymentSecurity" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconPaymentSecurity.src}}"/>
+    <div>{{brandIconPaymentSecurity.name}}</div>
+</div>
+</div>
+
+<h5>People</h5>
+<div class="grid text-center">
+<div  *ngFor="let brandIconPeople of brandIconsPeople" class="col-6 sm:col-4 lg:col-3 xl:col-2 pb-5">
+    <img src="{{brandIconPeople.src}}"/>
+    <div>{{brandIconPeople.name}}</div>
+</div>
+</div>

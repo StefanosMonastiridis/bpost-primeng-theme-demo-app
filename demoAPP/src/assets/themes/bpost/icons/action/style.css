@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'bposticons';
+  src:  url('fonts/bposticons.eot?wyl2b6');
+  src:  url('fonts/bposticons.eot?wyl2b6#iefix') format('embedded-opentype'),
+    url('fonts/bposticons.ttf?wyl2b6') format('truetype'),
+    url('fonts/bposticons.woff?wyl2b6') format('woff'),
+    url('fonts/bposticons.svg?wyl2b6#bposticons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.bpost-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bposticons' !important;
+  /*speak: never;*/
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.bpost-alert:before {
+  content: "\e900";
+}
+.bpost-bin:before {
+  content: "\e901";
+}
+.bpost-bookmark-filled:before {
+  content: "\e902";
+}
+.bpost-bookmark-outline:before {
+  content: "\e903";
+}
+.bpost-calendar:before {
+  content: "\e904";
+}
+.bpost-cart:before {
+  content: "\e905";
+}
+.bpost-chat:before {
+  content: "\e906";
+}
+.bpost-checkmark:before {
+  content: "\e907";
+}
+.bpost-chevron-circle-right:before {
+  content: "\e908";
+}
+.bpost-chevron-down:before {
+  content: "\e909";
+}
+.bpost-chevron-left:before {
+  content: "\e90a";
+}
+.bpost-chevron-right:before {
+  content: "\e90b";
+}
+.bpost-chevron-up:before {
+  content: "\e90c";
+}
+.bpost-close:before {
+  content: "\e90d";
+}
+.bpost-cog:before {
+  content: "\e90e";
+}
+.bpost-compare:before {
+  content: "\e90f";
+}
+.bpost-copy:before {
+  content: "\e910";
+}
+.bpost-crop:before {
+  content: "\e911";
+}
+.bpost-download:before {
+  content: "\e912";
+}
+.bpost-edit:before {
+  content: "\e913";
+}
+.bpost-expand:before {
+  content: "\e914";
+}
+.bpost-external:before {
+  content: "\e915";
+}
+.bpost-faceid:before {
+  content: "\e916";
+}
+.bpost-filter-1:before {
+  content: "\e917";
+}
+.bpost-fingerprint:before {
+  content: "\e918";
+}
+.bpost-hide:before {
+  content: "\e919";
+}
+.bpost-info:before {
+  content: "\e91a";
+}
+.bpost-map-center:before {
+  content: "\e91b";
+}
+.bpost-menu-contextual:before {
+  content: "\e91c";
+}
+.bpost-menu-search:before {
+  content: "\e91d";
+}
+.bpost-menu:before {
+  content: "\e91e";
+}
+.bpost-minus:before {
+  content: "\e91f";
+}
+.bpost-mix:before {
+  content: "\e920";
+}
+.bpost-notification:before {
+  content: "\e921";
+}
+.bpost-pause:before {
+  content: "\e922";
+}
+.bpost-photo:before {
+  content: "\e925";
+}
+.bpost-placeholder:before {
+  content: "\e926";
+}
+.bpost-plus:before {
+  content: "\e927";
+}
+.bpost-qr-code:before {
+  content: "\e928";
+}
+.bpost-rotate:before {
+  content: "\e929";
+}
+.bpost-scan:before {
+  content: "\e92a";
+}
+.bpost-search:before {
+  content: "\e92b";
+}
+.bpost-share:before {
+  content: "\e92c";
+}
+.bpost-thumb-down:before {
+  content: "\e92d";
+}
+.bpost-thumb-up:before {
+  content: "\e92e";
+}
+.bpost-tooltip:before {
+  content: "\e92f";
+}
+.bpost-upload:before {
+  content: "\e930";
+}
+.bpost-view:before {
+  content: "\e931";
+}
