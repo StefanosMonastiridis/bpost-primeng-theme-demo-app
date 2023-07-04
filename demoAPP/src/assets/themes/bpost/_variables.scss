@@ -55,7 +55,7 @@ $onSurfaceVariantColor: #576062; /* Secondary text */
 $onInverseContainerColor: #EFF1F1;
 $outlineColor: #71797A; /* Default border */
 $outlineVariantColor: #BFC8CA; /* Seperator */
-$outlineVariantLighterColor: #DEDEDF; /* Seperator */
+$outlineVariantLighterColor: #ECEEEE; /* Seperator */
 $surfaceDimColor: #D8DADA;
 $surfaceColor: #F7FAF9;
 $surfaceContainerLowestColor: white;
@@ -563,19 +563,19 @@ $paginatorElementMargin:.143rem !default;
 $paginatorElementPadding:0 !default;
 
 //table
-$tableHeaderBorder:none!default;
-$tableHeaderBorderWidth:0px 0 0px 0 !default;
+$tableHeaderBorder:0 0 1px 0 solid $outlineVariantLighterColor !default;
+$tableHeaderBorderWidth:0 0 1px 0 !default;
 $tableHeaderBg:$surfaceContainerLowestColor !default;
 $tableHeaderTextColor:$textSecondaryColor !default;
-$tableHeaderFontWeight:700 !default;
+$tableHeaderFontWeight:400 !default;
 $tableHeaderPadding:1rem 1rem !default;
 
 $tableHeaderCellPadding:1rem 1rem !default;
-$tableHeaderCellBg:$surfaceContainerHighColor !default;
+$tableHeaderCellBg:$surfaceContainerLowestColor !default;
 $tableHeaderCellTextColor:$onSurfaceVariantColor !default;
-$tableHeaderCellFontWeight:700 !default;
-$tableHeaderCellBorder:1px solid $outlineVariantColor !default;
-$tableHeaderCellBorderWidth:0 0 0px 0 !default;
+$tableHeaderCellFontWeight:500 !default;
+$tableHeaderCellBorder:0 0 1px 0 solid $outlineVariantLighterColor !default;
+$tableHeaderCellBorderWidth:1px !default;
 $tableHeaderCellHoverBg:$surfaceContainerLowColor !default;
 $tableHeaderCellTextHoverColor:$onSurfaceColor !default;
 $tableHeaderCellIconColor:$onSurfaceVariantColor !default;
@@ -591,9 +591,9 @@ $tableBodyRowTextColor:$onSurfaceColor !default;
 $tableBodyRowEvenBg:scale-color($tableBodyRowBg, $lightness: -1%) !default;
 $tableBodyRowHoverBg:$surfaceContainerLowColor !default;
 $tableBodyRowTextHoverColor:$onSurfaceColor !default;
-$tableBodyCellBorder:none!default;
-$tableBodyCellBorderWidth:0 0 0px 0 !default;
-$tableBodyCellPadding:1rem 1rem !default;
+$tableBodyCellBorder:0 0 1px 0 solid $outlineVariantLighterColor !default;
+$tableBodyCellBorderWidth:0 0 1px 0 !default;
+$tableBodyCellPadding:1.5rem 1rem !default;
 
 $tableFooterCellPadding:1rem 1rem !default;
 $tableFooterCellBg:$surfaceContainerLowestColor !default;

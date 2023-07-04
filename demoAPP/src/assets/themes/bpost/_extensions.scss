@@ -1,5 +1,6 @@
 /* Customizations to the designer theme should be defined here */
 
+
 .p-datepicker {
     .p-datepicker-header {
         .p-datepicker-prev,
@@ -139,11 +140,7 @@
     }
 }
 
-.container{
-    border-radius: $borderRadiusContainer;
-    background: $surfaceContainerLowestColor;
-    
-}
+
 
 .gap-small{
     gap: $sizeS;
@@ -155,6 +152,25 @@
 
 .margin-small{
     margin: $sizeS;
+}
+
+.container{
+   
+    border-radius: $borderRadiusContainer;
+    background: $surfaceContainerLowestColor;
+    
+}
+
+.p-datatable-header{
+    background-color: $surfaceContainerLowestColor;
+    border-radius: $borderRadiusContainer;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+
+}
+
+.p-datatable-thead{
+    border-bottom: 1px solid $outlineVariantLighterColor!important;
 }
 
 

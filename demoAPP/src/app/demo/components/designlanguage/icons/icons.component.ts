@@ -225,7 +225,149 @@ export class IconsComponent implements OnInit {
         {  name:'wheelchair', src:'/assets/themes/bpost/icons/brand/people/wheelchair.svg'}
     ]; 
 
+    brandIconsPOSLocator=[
+        { name:'building',src:'assets/themes/bpost/icons/brand/pos-locator/building.svg'},
+        { name:'cubee',src:'assets/themes/bpost/icons/brand/pos-locator/cubee.svg'},
+        { name:'distributor-colis',src:'assets/themes/bpost/icons/brand/pos-locator/distributor-colis.svg'},
+        { name:'letterbox',src:'assets/themes/bpost/icons/brand/pos-locator/letterbox.svg'},
+        { name:'parcel-locker',src:'assets/themes/bpost/icons/brand/pos-locator/parcel-locker.svg'},
+        { name:'shop',src:'assets/themes/bpost/icons/brand/pos-locator/shop.svg'},
+        { name:'sorting-center',src:'assets/themes/bpost/icons/brand/pos-locator/sorting-center.svg'}
+    ];
 
+    brandIconsSocialMedia=[
+        { name:'ColourFacebook', src:'/assets/themes/bpost/icons/brand/socials/ColourFacebook.svg'},
+        { name:'ColourInsta', src:'/assets/themes/bpost/icons/brand/socials/ColourInsta.svg'},
+        { name:'ColourLinkedIn', src:'/assets/themes/bpost/icons/brand/socials/ColourLinkedIn.svg'},
+        { name:'ColourTwitter', src:'/assets/themes/bpost/icons/brand/socials/ColourTwitter.svg'},
+        { name:'ColourYouTube', src:'/assets/themes/bpost/icons/brand/socials/ColourYouTube.svg'},
+        { name:'MonoFacebook', src:'/assets/themes/bpost/icons/brand/socials/MonoFacebook.svg'},
+        { name:'MonoInsta', src:'/assets/themes/bpost/icons/brand/socials/MonoInsta.svg'},
+        { name:'MonoLinkeIn', src:'/assets/themes/bpost/icons/brand/socials/MonoLinkedIn.svg'},
+        { name:'MonoTwitter', src:'/assets/themes/bpost/icons/brand/socials/MonoTwitter.svg'},
+        { name:'MonoYouTube', src:'/assets/themes/bpost/icons/brand/socials/MonoYouTube.svg'}
+    ];
+
+    brandIconsStamps=[
+        { name:'carte-procuration', src:'assets/themes/bpost/icons/brand/stamps/carte-procuration.svg'},
+        { name:'myStamp', src:'assets/themes/bpost/icons/brand/stamps/myStamp.svg'},
+        { name:'stamp-check', src:'assets/themes/bpost/icons/brand/stamps/stamp-check.svg'},
+        { name:'stamp-non-prior', src:'assets/themes/bpost/icons/brand/stamps/stamp-non-prior.svg'},
+        { name:'stamp-prior', src:'assets/themes/bpost/icons/brand/stamps/stamp-prior.svg'},
+        { name:'stamp-register', src:'assets/themes/bpost/icons/brand/stamps/stamp-register.svg'},
+        { name:'stamp-sollector', src:'assets/themes/bpost/icons/brand/stamps/stamp-sollector.svg'}
+    ];
+
+    brandIconsTech=[
+        { name:'data-check', src:'assets/themes/bpost/icons/brand/technology/data-check.svg'},
+        { name:'mobile-bpost', src:'assets/themes/bpost/icons/brand/technology/mobile-bpost.svg'},
+        { name:'mobile', src:'assets/themes/bpost/icons/brand/technology/mobile.svg'},
+        { name:'moblie-postcard', src:'assets/themes/bpost/icons/brand/technology/moblie-postcard.svg'},
+        { name:'offline-onliner', src:'assets/themes/bpost/icons/brand/technology/offline-onliner.svg'},
+        { name:'plugin', src:'assets/themes/bpost/icons/brand/technology/plugin.svg'},
+        { name:'robot', src:'assets/themes/bpost/icons/brand/technology/robot.svg'},
+        { name:'scannovate', src:'assets/themes/bpost/icons/brand/technology/scannovate.svg'},
+        { name:'uploadCloud', src:'assets/themes/bpost/icons/brand/technology/uploadCloud.svg'}
+    ];
+
+    brandIconsWorld=[
+        { name:'desitnations-world', src:'assets/themes/bpost/icons/brand/world/desitnations-world.svg'},
+        { name:'destinations-europe', src:'assets/themes/bpost/icons/brand/world/destinations-europe.svg'},
+        { name:'iso.svg', src:'assets/themes/bpost/icons/brand/world/iso.svg'},
+        { name:'online-payment', src:'assets/themes/bpost/icons/brand/world/online-payment.svg'},
+        { name:'world-colis', src:'assets/themes/bpost/icons/brand/world/world-colis.svg'},
+        { name:'world-return', src:'assets/themes/bpost/icons/brand/world/world-return.svg'},
+        { name:'world.svg', src:'assets/themes/bpost/icons/brand/world/world.svg'}
+    ];
+
+    brandIconsSustainability=[
+        { name:'eco-check', src:'assets/themes/bpost/icons/brand/sustainability/eco-check.svg'},
+        { name:'eco-questiomark', src:'assets/themes/bpost/icons/brand/sustainability/eco-questiomark.svg'},
+        { name:'eco-warning', src:'assets/themes/bpost/icons/brand/sustainability/eco-warning.svg'},
+        { name:'ecoLeave-outlined', src:'assets/themes/bpost/icons/brand/sustainability/ecoLeave-outlined.svg'},
+        { name:'ecoLeave', src:'assets/themes/bpost/icons/brand/sustainability/ecoLeave.svg'}
+    ];
+
+brandIconsOther=[
+    { name:'action', src:'assets/themes/bpost/icons/brand/other/action.svg'},
+        { name:'awareness', src:'assets/themes/bpost/icons/brand/other/awareness.svg'},
+        { name:'bike', src:'assets/themes/bpost/icons/brand/other/bike.svg'},
+        { name:'bookmark', src:'assets/themes/bpost/icons/brand/other/bookmark.svg'},
+        { name:'bpost-CO2', src:'assets/themes/bpost/icons/brand/other/bpost-CO2.svg'},
+        { name:'freight.', src:'assets/themes/bpost/icons/brand/other/bpost-freight.svg'},
+        { name:'calendar', src:'assets/themes/bpost/icons/brand/other/calendar.svg'},
+        { name:'caution', src:'assets/themes/bpost/icons/brand/other/caution.svg'},
+        { name:'chatbot', src:'assets/themes/bpost/icons/brand/other/chatbot.svg'},
+        { name:'check', src:'assets/themes/bpost/icons/brand/other/check.svg'},
+        { name:'checkmark-checked', src:'assets/themes/bpost/icons/brand/other/checkmark-checked.svg'},
+        { name:'/-checkmark-empty', src:'assets/themes/bpost/icons/brand/other/checkmark-empty.svg'},
+        { name:'clean', src:'assets/themes/bpost/icons/brand/other/clean.svg'},
+        { name:'clock', src:'assets/themes/bpost/icons/brand/other/clock.svg'},
+        { name:'contact', src:'assets/themes/bpost/icons/brand/other/contact.svg'},
+        { name:'cross-sell', src:'assets/themes/bpost/icons/brand/other/cross-sell.svg'},
+        { name:'download', src:'assets/themes/bpost/icons/brand/other/download.svg'},
+        { name:'error', src:'assets/themes/bpost/icons/brand/other/error.svg'},
+        { name:'feedback', src:'assets/themes/bpost/icons/brand/other/feedback.svg'},
+        { name:'history', src:'assets/themes/bpost/icons/brand/other/history.svg'},
+        { name:'image', src:'assets/themes/bpost/icons/brand/other/image.svg'},
+        { name:'inbox', src:'assets/themes/bpost/icons/brand/other/inbox.svg'},
+        { name:'info', src:'assets/themes/bpost/icons/brand/other/info.svg'},
+        { name:'insight', src:'assets/themes/bpost/icons/brand/other/insight.svg'},
+        { name:'justice', src:'assets/themes/bpost/icons/brand/other/justice.svg'},
+        { name:'language', src:'assets/themes/bpost/icons/brand/other/language.svg'},
+        { name:'light-1', src:'assets/themes/bpost/icons/brand/other/light-1.svgv'},
+        { name:'light-2', src:'assets/themes/bpost/icons/brand/other/light-2.svg'},
+        { name:'logOut', src:'assets/themes/bpost/icons/brand/other/logOut.svg'},
+        { name:'marCom', src:'assets/themes/bpost/icons/brand/other/marCom.svg'},
+        { name:'message', src:'assets/themes/bpost/icons/brand/other/message.svg'},
+        { name:'more', src:'assets/themes/bpost/icons/brand/other/more.svg'},
+        { name:'move', src:'assets/themes/bpost/icons/brand/other/move.svg'},
+        { name:'notification', src:'assets/themes/bpost/icons/brand/other/notification.svg'},
+        { name:'performance', src:'assets/themes/bpost/icons/brand/other/performance.svg'},
+        { name:'phone', src:'assets/themes/bpost/icons/brand/other/phone.svg'},
+        { name:'print', src:'assets/themes/bpost/icons/brand/other/print.svg'},
+        { name:'question', src:'assets/themes/bpost/icons/brand/other/question.svg'},
+        { name:'refresh', src:'assets/themes/bpost/icons/brand/other/refresh.svg'},
+        { name:'register', src:'assets/themes/bpost/icons/brand/other/register.svg'},
+        { name:'scan', src:'assets/themes/bpost/icons/brand/other/scan.svg'},
+        { name:'search', src:'assets/themes/bpost/icons/brand/other/search.svg'},
+        { name:'services', src:'assets/themes/bpost/icons/brand/other/services.svg'},
+        { name:'setting', src:'assets/themes/bpost/icons/brand/other/setting.svg'},
+        { name:'speaker', src:'assets/themes/bpost/icons/brand/other/speaker.svg'},
+        { name:'star-filled', src:'assets/themes/bpost/icons/brand/other/star-filled.svg'},
+        { name:'star-outlined', src:'assets/themes/bpost/icons/brand/other/star-outlined.svg'},
+        { name:'storms', src:'assets/themes/bpost/icons/brand/other/storms.svg'},
+        { name:'sun', src:'assets/themes/bpost/icons/brand/other/sun.svg'},
+        { name:'support', src:'assets/themes/bpost/icons/brand/other/support.svg'},
+        { name:'target', src:'assets/themes/bpost/icons/brand/other/target.svg'},
+        { name:'video', src:'assets/themes/bpost/icons/brand/other/video.svg'},
+        { name:'zoom-2', src:'assets/themes/bpost/icons/brand/other/zoom-2.svg'}
+];
+
+brandIconsMyWorld=[
+    { name:'calendar', src:'assets/themes/bpost/icons/brand/myWorld/calendar.svg'},
+    { name:'DWC-DoMyMove', src:'assets/themes/bpost/icons/brand/myWorld/DWC-DoMyMove.svg'},
+    { name:'DWC-Mail', src:'assets/themes/bpost/icons/brand/myWorld/DWC-Mail.svg'},
+    { name:'DWC-Newspaper-Reclame', src:'assets/themes/bpost/icons/brand/myWorld/DWC-Newspaper-Reclame.svg'},
+    { name:'DWC-OtherProduct', src:'assets/themes/bpost/icons/brand/myWorld/DWC-OtherProduct.svg'},
+    { name:'DWC-RegisteredMail', src:'assets/themes/bpost/icons/brand/myWorld/DWC-RegisteredMail.svg'},
+    { name:'DWC-VAS', src:'assets/themes/bpost/icons/brand/myWorld/DWC-VAS.svg'},
+    { name:'ecodrive-AgressiveAcceleration', src:'assets/themes/bpost/icons/brand/myWorld/ecodrive-AgressiveAcceleration.svg'},
+    { name:'ecodrive-AgressiveBrak', src:'assets/themes/bpost/icons/brand/myWorld/ecodrive-AgressiveBrake.svg'},
+    { name:'ecodrive-HarshBrake', src:'assets/themes/bpost/icons/brand/myWorld/ecodrive-HarshBrake.svg'},
+    { name:'ecodrive-Overspeed', src:'assets/themes/bpost/icons/brand/myWorld/ecodrive-Overspeed.svg'},
+    { name:'ecodrive-StationnaryMotor', src:'assets/themes/bpost/icons/brand/myWorld/ecodrive-StationnaryMotor.svg'},
+    { name:'ecodrive', src:'assets/themes/bpost/icons/brand/myWorld/ecodrive.svg'},
+    { name:'FC-Delay', src:'assets/themes/bpost/icons/brand/myWorld/FC-Delay.svg'},
+    { name:'FC-delvieryFastness', src:'assets/themes/bpost/icons/brand/myWorld/FC-delvieryFastness.svg'},
+    { name:'FC-DWC-Parcel', src:'assets/themes/bpost/icons/brand/myWorld/FC-DWC-Parcel.svg'},
+    { name:'FC-FeedbackClient', src:'assets/themes/bpost/icons/brand/myWorld/FC-FeedbackClient.svg'},
+    { name:'FC-FollowUpInfo', src:'assets/themes/bpost/icons/brand/myWorld/FC-FollowUpInfo.svg'},
+    { name:'FC-KindnessClient', src:'assets/themes/bpost/icons/brand/myWorld/FC-KindnessClient.svg'},
+    { name:'fc-other.', src:'assets/themes/bpost/icons/brand/myWorld/fc-other.svg'},
+    { name:'FC-RespectDeliveryAddress', src:'assets/themes/bpost/icons/brand/myWorld/FC-RespectDeliveryAddress.svg'},
+    { name:'FC-RingBeforeDelivery', src:'assets/themes/bpost/icons/brand/myWorld/FC-RingBeforeDelivery.svg'}
+];
 
        
     icons: any[] = [];
