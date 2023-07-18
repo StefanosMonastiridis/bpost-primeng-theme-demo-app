@@ -1,146 +1,293 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
+//Seed colors. Used to generate the palettes
 
-$primaryColor: #DD1829 !default;
-$primaryLightColor: scale-color($primaryColor, $lightness: 60%) !default;
-$primaryDarkColor: scale-color($primaryColor, $lightness: -5%) !default;
-$primaryDarkerColor: scale-color($primaryColor, $lightness: -10%) !default;
-$primaryTextColor: white !default;
-$primaryContainerColor: #FFEDEB;
-$onPrimaryContainerColor: #580A10;
+$seed-black: #000000;
+$seed-white: #ffffff;
+$seed-red: #DD1829;
+$seed-blue: #347794;
+$seed-green: #448344;
+$seed-orange: #CB4D01;
+$seed-yellow: #FFC222;
+$seed-purple: #5355BB;
 
-$secondaryColor: #347794 !default;
-$secondaryLightColor: scale-color($secondaryColor, $lightness: 60%) !default;
-$secondaryDarkColor: scale-color($secondaryColor, $lightness: -5%) !default;
-$secondaryDarkerColor: scale-color($secondaryColor, $lightness: -10%) !default;
-$secondaryContainerColor: #D9EAF1;
-$onSecondaryContainerColor: #0D1E25;
-$secondaryBorderColor: #27596F;
+// Palettes
 
-$infoColor: #5355BB !default;
-$infoLightColor: scale-color($infoColor, $lightness: 60%) !default;
-$infoDarkColor: scale-color($infoColor, $lightness: -5%) !default;
-$infoDarkerColor: scale-color($infoColor, $lightness: -10%) !default;
-$infoContainerColor: #e9e9ff;
-$onInfoContainerColor: $infoColor;
+//Primary
+$palettes-primary-red-10: #580A10;
+$palettes-primary-red-20: #850E19;
+$palettes-primary-red-30: #B11321;
+$palettes-primary-red-40: #DD1829;
+$palettes-primary-red-50: #E44654;
+$palettes-primary-red-60: #EB747F;
+$palettes-primary-red-70: #F1A3A9;
+$palettes-primary-red-80: #F8D1D4;
+$palettes-primary-red-90: #FFEDEB;
+$palettes-primary-red-95: #FFF8F8;
+$palettes-primary-red-99: #FFFBFF;
 
-$validationColor: #448344 !default;
-$validationLightColor: scale-color($validationColor, $lightness: 60%) !default;
-$validationDarkColor: scale-color($validationColor, $lightness: -5%) !default;
-$validationDarkerColor: scale-color($validationColor, $lightness: -10%) !default;
-$validationContainerColor: #E7F3E7;
-$onValidationContainerColor: #1B341B;
-$validationBorderColor: #366936;
+$palettes-accent-blue-10: #0D1E25;
+$palettes-accent-blue-20: #1A3C4A;
+$palettes-accent-blue-30: #27596F;
+$palettes-accent-blue-40: #347794;
+$palettes-accent-blue-50: #4195B9;
+$palettes-accent-blue-60: #67AAC7;
+$palettes-accent-blue-70: #8DBFD5;
+$palettes-accent-blue-80: #B3D5E3;
+$palettes-accent-blue-90: #D9EAF1;
+$palettes-accent-blue-95: #EEF9FE;
+$palettes-accent-blue-99: #F8FDFF;
 
-$warningColor: #FFC222
-!default;
-$warningLightColor: scale-color($warningColor, $lightness: 60%) !default;
-$warningDarkColor: scale-color($warningColor, $lightness: -5%) !default;
-$warningDarkerColor: scale-color($warningColor, $lightness: -10%) !default;
-$warningContainerColor: #FFF7E2;
-$onWarningContainerColor: #664E0E;
-$warningBorderColor: #CC9B1B;
+//Accent colors
 
-$errorColor:#cb4d01 !default;
-$errorLightColor: scale-color($errorColor, $lightness: 60%) !default;
-$errorDarkColor: scale-color($errorColor, $lightness: -5%) !default;
-$errorDarkerColor: scale-color($errorColor, $lightness: -10%) !default;
-$errorContainerColor: #FFEDE6;
-$onErrorContainerColor: #511F00;
-$errorBorderColor: #A23E01;
+$palettes-accent-yellow-10: #664E0E;
+$palettes-accent-yellow-20: #997414;
+$palettes-accent-yellow-30: #CC9B1B;
+$palettes-accent-yellow-40: #FFC222;
+$palettes-accent-yellow-50: #FFCE4E;
+$palettes-accent-yellow-60: #FFDA7A;
+$palettes-accent-yellow-70: #FFE7A7;
+$palettes-accent-yellow-80: #FFF3D3;
+$palettes-accent-yellow-90: #FFF7E2;
+$palettes-accent-yellow-95: #FFFBF2;
+$palettes-accent-yellow-99: #FFFEFA;
 
-$onSurfaceColor: #191C1D; /* Primary text */
-$onSurfaceVariantColor: #576062; /* Secondary text */
-$onInverseContainerColor: #EFF1F1;
-$outlineColor: #71797A; /* Default border */
-$outlineVariantColor: #BFC8CA; /* Seperator */
-$outlineVariantLighterColor: #ECEEEE; /* Seperator */
-$surfaceDimColor: #D8DADA;
-$surfaceColor: #F7FAF9;
-$surfaceContainerLowestColor: white;
-$surfaceContainerLowColor: #F2F4F4;
-$surfaceContainerMidColor: #ECEEEE;
-$surfaceContainerHighColor: #E6E9E8;
-$surfaceContainerHighestColor: #E1E3E3;
-$surfaceContainerInverseColor: #444748;
+$palettes-accent-green-10: #1B341B;
+$palettes-accent-green-20: #294F29;
+$palettes-accent-green-30: #366936;
+$palettes-accent-green-40: #448344;
+$palettes-accent-green-50: #699C69;
+$palettes-accent-green-60: #8FB58F;
+$palettes-accent-green-70: #B4CDB4;
+$palettes-accent-green-80: #DAE6DA;
+$palettes-accent-green-90: #E7F3E7;
+$palettes-accent-green-95: #F1FAF1;
+$palettes-accent-green-99: #F5FDF5;
+
+$palettes-accent-orange-10: #511F00;
+$palettes-accent-orange-20: #7A2E01;
+$palettes-accent-orange-30: #A23E01;
+$palettes-accent-orange-40: #CB4D01;
+$palettes-accent-orange-50: #D57134;
+$palettes-accent-orange-60: #E09467;
+$palettes-accent-orange-70: #EAB899;
+$palettes-accent-orange-80: #F5DBCC;
+$palettes-accent-orange-90: #FFEDE6;
+$palettes-accent-orange-95: #FFF6F2;
+$palettes-accent-orange-99: #FFFCFB;
+
+$palettes-accent-purple-10: #F2F3FF;
+$palettes-accent-purple-20: #CECEFF;
+$palettes-accent-purple-30: #A9AAFF;
+$palettes-accent-purple-40: #7F81F5;
+$palettes-accent-purple-50: #686AD8;
+$palettes-accent-purple-60: #5355BB;
+$palettes-accent-purple-70: #40429E;
+$palettes-accent-purple-80: #303181;
+$palettes-accent-purple-90: #212364;
+$palettes-accent-purple-100: #151646;
+
+// Neutrals
+
+$palettes-neutral-default-4: #0B0F0F;
+$palettes-neutral-default-6: #101414;
+$palettes-neutral-default-10: #191C1D;
+$palettes-neutral-default-12: #1D2020;
+$palettes-neutral-default-14: #272B2B;
+$palettes-neutral-default-16: #323536;
+$palettes-neutral-default-17: #363A3A;
+$palettes-neutral-default-20: #444748;
+$palettes-neutral-default-30: #444747;
+$palettes-neutral-default-40: #5C5F5F;
+$palettes-neutral-default-50: #747878;
+$palettes-neutral-default-60: #8E9192;
+$palettes-neutral-default-70: #A9ACAC;
+$palettes-neutral-default-80: #C4C7C7;
+$palettes-neutral-default-87: #D8DADA;
+$palettes-neutral-default-90: #E1E3E3;
+$palettes-neutral-default-92: #E6E9E8;
+$palettes-neutral-default-94: #ECEEEE;
+$palettes-neutral-default-95: #EFF1F1;
+$palettes-neutral-default-96: #F2F4F4;
+$palettes-neutral-default-98: #F7FAF9;
+$palettes-neutral-default-99: #FCFCFC;
+$palettes-neutral-variant-10: #141D1F;
+$palettes-neutral-variant-20: #293234;
+$palettes-neutral-variant-30: #3F484A;
+$palettes-neutral-variant-40: #576062;
+$palettes-neutral-variant-50: #71797A;
+$palettes-neutral-variant-60: #899294;
+$palettes-neutral-variant-70: #A3ADAF;
+$palettes-neutral-variant-80: #BFC8CA;
+$palettes-neutral-variant-90: #DBE4E6;
+$palettes-neutral-variant-95: #E9F2F5;
+$palettes-neutral-variant-99: #FCFCFC;
+
+// UI colors. -dark suffix refers to dark mode. 
+$color-primary-low-light: $palettes-primary-red-90;
+$color-primary-low-dark: $palettes-primary-red-90;
+$color-primary-default-light: $palettes-primary-red-40;
+$color-primary-default-dark: $palettes-primary-red-40;
+$color-primary-high-light: $palettes-primary-red-30;
+$color-primary-high-dark: $palettes-primary-red-30;
+$color-primary-higher-light: $palettes-primary-red-10;
+$color-primary-higher-dark: $palettes-primary-red-10;
+
+$color-secondary-low-light: $palettes-accent-blue-90;
+$color-secondary-low-dark: $palettes-accent-blue-90;
+$color-secondary-default-light: $palettes-accent-blue-40;
+$color-secondary-default-dark: $palettes-accent-blue-40;
+$color-secondary-high-light: $palettes-accent-blue-30;
+$color-secondary-high-dark:  $palettes-accent-blue-30;
+$color-secondary-higher-light:$palettes-accent-blue-10;
+$color-secondary-higher-dark: $palettes-accent-blue-10;
+
+$color-info-low-light: $palettes-accent-purple-20;
+$color-info-low-dark: $palettes-accent-purple-20;
+$color-info-default-light: $palettes-accent-purple-60;
+$color-info-default-dark: $palettes-accent-purple-60;
+$color-info-high-light: $palettes-accent-purple-70;
+$color-info-high-dark: $palettes-accent-purple-70;
+$color-info-higher-light: $palettes-accent-purple-80;
+$color-info-higher-dark: $palettes-accent-purple-80;
+
+$color-validation-low-light: $palettes-accent-green-90;
+$color-validation-low-dark: $palettes-accent-green-90;
+$color-validation-default-light: $palettes-accent-green-30;
+$color-validation-default-dark: $palettes-accent-green-30;
+$color-validation-high-light: $palettes-accent-green-20;
+$color-validation-high-dark: $palettes-accent-green-20;
+$color-validation-higher-light: $palettes-accent-green-10;
+$color-validation-higher-dark: $palettes-accent-green-10;
+
+$color-warning-low-light: $palettes-accent-yellow-90;
+$color-warning-low-dark: $palettes-accent-yellow-90;
+$color-warning-default-light: $palettes-accent-yellow-40;
+$color-warning-default-dark: $palettes-accent-yellow-40;
+$color-warning-high-light: $palettes-accent-yellow-30;
+$color-warning-high-dark: $palettes-accent-yellow-30;
+$color-warning-higher-light: $palettes-accent-yellow-10;
+$color-warning-higher-dark: $palettes-accent-yellow-10;
+
+$color-error-low-light: $palettes-accent-orange-90;
+$color-error-low-dark: $palettes-accent-orange-90;
+$color-error-default-light: $palettes-accent-orange-40;
+$color-error-default-dark: $palettes-accent-orange-40;
+$color-error-high-light: $palettes-accent-orange-30;
+$color-error-high-dark: $palettes-accent-orange-30;
+$color-error-higher-light: $palettes-accent-orange-10;
+$color-error-higher-dark: $palettes-accent-orange-10;
+
+$color-surface-lowest-light: $palettes-neutral-default-98;
+$color-surface-lowest-dark: $palettes-neutral-default-6;
+$color-surface-low-light: $seed-white;
+$color-surface-low-dark: $palettes-neutral-default-4;
+$color-surface-high-light: $palettes-neutral-default-96;
+$color-surface-high-dark: $palettes-neutral-default-10;
+$color-surface-higher-light: $palettes-neutral-variant-95;
+$color-surface-higher-dark: $palettes-neutral-variant-20;
+$color-surface-highest-light: $palettes-neutral-default-90;
+$color-surface-highest-dark: $palettes-neutral-default-16;
+$color-surface-inverse-light: $palettes-neutral-default-20;
+$color-surface-inverse-dark: $palettes-neutral-default-90;
+$color-surface-inverseVariant-light: $palettes-neutral-variant-50;
+$color-surface-inverseVariant-dark: $palettes-neutral-variant-60;
+
+$color-text-bright-light: $seed-white;
+$color-text-bright-dark: $seed-white;
+$color-text-primary-light: $palettes-neutral-default-10;
+$color-text-primary-dark: $palettes-neutral-default-90;
+$color-text-secondary-light: $palettes-neutral-variant-40;
+$color-text-secondary-dark: $palettes-neutral-variant-80;
+$color-text-disabled-light: $palettes-neutral-variant-80;
+$color-text-disabled-dark: $palettes-neutral-variant-30;
+$color-text-primary-inverse-light: $palettes-neutral-default-90;
+$color-text-primary-inverse-dark: $palettes-neutral-default-10;
+$color-text-secondary-inverse-light: $palettes-neutral-default-95;
+$color-text-secondary-inverse-dark: $palettes-neutral-default-20;
+
+$color-outline-high-light: $palettes-neutral-variant-50;
+$color-outline-high-dark: $palettes-neutral-variant-60;
+$color-outline-default-light: $palettes-neutral-variant-80;
+$color-outline-default-dark: $palettes-neutral-variant-30;
+$color-outline-low-light: $palettes-neutral-default-94;
+$color-outline-low-dark: $palettes-neutral-variant-20;
+
+$color-scrim-light: $seed-black;
+$color-scrim-dark: $seed-black;
+$color-shadow-light: $seed-black;
+$color-shadow-dark: $seed-black;
+$color-icons-blue-light:$palettes-accent-blue-50;
+$color-icons-blue-dark: $palettes-accent-blue-50;
+$color-icons-green-light: $palettes-accent-blue-40;
+$color-icons-green-dark: $palettes-accent-blue-40;
+$color-icons-red-light: $palettes-primary-red-40;
+$color-icons-red-dark: $palettes-primary-red-40;
+
+//scale
 
 
-/*Border radious*/
+$scale-tiny: 0.25rem;
+$scale-x-small: 0.5rem;
+$scale-small: 0.75rem;
+$scale-medium: 1rem;
+$scale-large: 1.5rem;
+$scale-x-large: 2rem;
+$scale-xx-large: 2.5rem;
+$scale-xxx-large: 3rem;
 
+//spacing
+$spacing-xx-small: $scale-tiny;
+$spacing-x-small:$scale-x-small;
+$spacing-small: $scale-small;
+$spacing-medium: $scale-medium;
+$spacing-large: $scale-large;
+$spacing-x-large: $scale-x-large;
+$spacing-xx-large: $scale-xx-large;
 
+// Sizes
+$size-x-small:$scale-x-small;
+$size-small: $scale-small;
+$size-medium: $scale-medium;
+$size-large: $scale-large;
+$size-x-large: $scale-x-large;
+$size-xx-large: $scale-xx-large;
+// Border radious
 
-$fontSizeButton: 1.125rem;
-$fontWeightButton: 500;
+$radius-tiny:$scale-tiny;
+$radius-small: $scale-x-small;
+$radius-medium: $scale-medium;
+$radius-large: $scale-large;
 
-
-
-
-
-
-
-
-
-$highlightBg: $surfaceContainerHighestColor !default;
-$highlightTextColor: $onSurfaceColor !default;
-
-$colors: (
-    "blue": #54B0F3,
-    "green": #29C76F,
-    "yellow": #F3D054,
-    "cyan": #3EC9D6,
-    "pink": #EA5455,
-    "indigo": #5464F3,
-    "teal": #0DC381,
-    "orange": #FF9F42,
-    "bluegray": #6878A0,
-    "purple": #7254F3,
-    "red": #FF384B,
-    "primary": $primaryColor
-) !default;
-
-//reused color variables
-$shade000:#ffffff !default;    //surface
-$shade100:#eff3f8 !default;    //header background
-$shade200:#f6f9fc !default;    //hover background
-$shade300:#BFC8CA !default;    //border, divider
-$shade400:#71797A !default;    //input border
-$shade500:#71797A !default;    //input icon
-$shade600:#576062 !default;    //text secondary color
-$shade700:#191C1D !default;    //text color
-$shade800:#343a40 !default;    //unused
-$shade900:#212529 !default;    //unused
-
-$sizeXXS: 0.25rem;
-$sizeXS: 0.5rem;
-$sizeS: 0.75rem;
-$sizeM: 1rem;
-$sizeL: 1.5rem;
-$sizeXL: 2rem;
-
-
-$borderRadiusButton: $sizeXXS;
-$borderRadiusContainerSmall: $sizeM; 
-$borderRadiusContainer: $sizeL;
+//system variables
+$primaryColor: $color-primary-default-light!default;
+$primaryLightColor: $color-primary-low-light!default;
+$primaryDarkColor: $color-primary-high-light!default;
+$primaryDarkerColor: $color-primary-higher-light!default;
+$primaryTextColor: $color-text-bright-light !default;
+$highlightBg: $color-surface-high-light !default;
+$highlightTextColor: $color-text-primary-light !default;
+/*$fontSizeButton: 1.125rem;*/
+$tableHeaderCellHighlightBg: $color-surface-high-light !default;
 
 //global
 $fontFamily:'Ubuntu', sans-serif !default;
 $fontSize:1rem !default;
 $fontWeight:normal !default;
-$textColor:$onSurfaceColor !default;
-$textSecondaryColor:$onSurfaceVariantColor !default;
-$borderRadius:$sizeS!default;
-$borderRadiusInput:$sizeXS;
+$textColor:$color-text-primary-light !default;
+$textSecondaryColor:$color-text-secondary-light !default;
+$borderRadius:$radius-small!default;
+$borderRadiusInput:$radius-small;
 $transitionDuration:.2s !default;
 $formElementTransition:background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration !default;
 $actionIconTransition:background-color $transitionDuration, color $transitionDuration, box-shadow $transitionDuration !default;
 $listItemTransition:box-shadow $transitionDuration !default;
-$primeIconFontSize:1rem !default;
-$divider:1px solid $outlineVariantColor !default;
+$primeIconFontSize:$size-medium!default;
+$divider:1px solid $color-outline-low-light !default;
 $inlineSpacing:.5rem !default;
 $disabledOpacity:.6 !default;
 $maskBg:rgba(0, 0, 0, 0.4) !default;
-$loadingIconFontSize:2rem !default;
+$loadingIconFontSize:$size-x-large !default;
 
 
 //scale
@@ -148,62 +295,64 @@ $scaleSM:0.875 !default;
 $scaleLG:1.25 !default;
 
 //focus
-$focusOutlineColor:$primaryColor !default;
+$focusOutlineColor:$color-outline-high-light !default;
 $focusOutline:0 none !default;
 $focusOutlineOffset:0 !default;
 $focusShadow:0 0 0 1px $focusOutlineColor !default;
 
 //action icons
-$actionIconWidth:2rem !default;
-$actionIconHeight:2rem !default;
+$actionIconWidth:$size-large !default;
+$actionIconHeight:$size-large!default;
 $actionIconBg:transparent !default;
 $actionIconBorder:0 none !default;
-$actionIconColor:$onSurfaceColor !default;
-$actionIconHoverBg:$surfaceContainerHighColor!default;
+$actionIconColor:$color-text-primary-light!default;
+$actionIconHoverBg:$color-surface-high-light!default;
 $actionIconHoverBorderColor:transparent !default;
-$actionIconHoverColor:$onSurfaceColor !default;
+$actionIconHoverColor:$color-text-primary-light!default;
 $actionIconBorderRadius:50% !default;
 
 //input field (e.g. inputtext, spinner, inputmask)
-$inputPadding:.75rem .75rem !default;
-$inputTextFontSize:1rem !default;
+$inputPadding:$spacing-small $spacing-medium  !default;
+$inputTextFontSize:$size-small !default;
 
-$inputBg:$surfaceContainerLowestColor !default;
-$inputTextColor:$onSurfaceColor !default;
-$inputIconColor:$onSurfaceColor !default;
-$inputBorder:1px solid $outlineColor !default;
-$inputHoverBorderColor:$primaryColor !default;
-$inputFocusBorderColor:$primaryColor !default;
-$inputErrorBorderColor:$errorColor !default;
-$inputPlaceholderTextColor:$onSurfaceVariantColor !default;
-$inputFilledBg:$surfaceContainerHighColor !default;
+$inputBg:$color-surface-low-light !default;
+$inputTextColor:$color-text-primary-light !default;
+$inputIconColor:$color-text-primary-light!default;
+$inputBorder:1px solid $color-outline-default-light!default;
+$inputHoverBorderColor:$color-outline-high-light!default;
+$inputFocusBorderColor:$color-outline-high-light !default;
+$inputErrorBorderColor:$color-error-default-light !default;
+$inputPlaceholderTextColor:$color-text-secondary-light !default;
+$inputFilledBg:$color-surface-high-light !default;
 $inputFilledHoverBg:$inputFilledBg !default;
-$inputFilledFocusBg:$surfaceContainerLowColor !default;
+$inputFilledFocusBg:$color-surface-high-light!default;
 
 //input groups
 $inputGroupBg:none !default;
-$inputGroupTextColor:$onSurfaceColor !default;
+$inputGroupTextColor:$color-primary-default-light !default;
 $inputGroupAddOnMinWidth: 3rem !default;
 
 //input lists (e.g. dropdown, autocomplete, multiselect, orderlist)
-$inputListBg:$surfaceContainerLowestColor !default;
-$inputListTextColor:$onSurfaceColor !default;
+$inputListBg:$color-surface-low-light !default;
+$inputListTextColor:$color-text-primary-light
+ !default;
 $inputListBorder:$inputBorder !default;
 $inputListPadding:.75rem 0 !default;
 $inputListItemPadding:.75rem 1.25rem !default;
 $inputListItemBg:transparent !default;
-$inputListItemTextColor:$onSurfaceColor !default;
-$inputListItemHoverBg:$highlightBg !default;
-$inputListItemTextHoverColor:$onSurfaceColor !default;
+$inputListItemTextColor:$color-text-primary-light !default;
+$inputListItemHoverBg:$color-surface-high-light  !default;
+$inputListItemTextHoverColor:$color-text-primary-light !default;
 $inputListItemBorder:0 none !default;
 $inputListItemBorderRadius:0 !default;
 $inputListItemMargin:0 !default;
 $inputListItemFocusShadow:inset 0 0 0 0.15rem $focusOutlineColor !default;
 $inputListHeaderPadding:.75rem 1.25rem !default;
 $inputListHeaderMargin:0 !default;
-$inputListHeaderBg:$surfaceContainerLowestColor !default;
-$inputListHeaderTextColor:$onSurfaceColor !default;
-$inputListHeaderBorder:1px solid $outlineColor !default;
+$inputListHeaderBg:$color-surface-low-light !default;
+$inputListHeaderTextColor:$color-text-primary-light
+ !default;
+$inputListHeaderBorder:1px solid $color-outline-default-light !default;
 
 //inputs with overlays (e.g. autocomplete, dropdown, multiselect)
 $inputOverlayBg:$inputListBg !default;
@@ -212,13 +361,13 @@ $inputOverlayBorder:0 none !default;
 $inputOverlayShadow:0 2px 12px 0 rgba(0,0,0,.1) !default;
 
 //password
-$passwordMeterBg:$surfaceContainerHighColor !default;
-$passwordWeakBg:$errorColor !default;
-$passwordMediumBg:$warningContainerColor!default;
-$passwordStrongBg:$validationColor !default;
+$passwordMeterBg:$color-surface-high-light !default;
+$passwordWeakBg:$color-error-default-light !default;
+$passwordMediumBg:$color-warning-low-light!default;
+$passwordStrongBg:$color-validation-default-light !default;
 
 //button
-$buttonPadding:.75rem 1.25rem !default;
+$buttonPadding:$spacing-small $spacing-large !default;
 $buttonIconOnlyWidth:3rem !default;
 $buttonIconOnlyPadding:.75rem 0 !default;
 $buttonBg:$primaryColor !default;
@@ -232,26 +381,27 @@ $buttonTextActiveColor:$primaryTextColor !default;
 $buttonActiveBorderColor:$primaryDarkerColor !default;
 $raisedButtonShadow:0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !default;
 $roundedButtonBorderRadius:2rem !default;
+$borderRadiusButton: $radius-small !default;
 
 $textButtonHoverBgOpacity:.04 !default;
 $textButtonActiveBgOpacity:.16 !default;
 $outlinedButtonBorder:1px solid !default;
 $plainButtonTextColor:$textSecondaryColor !default;
-$plainButtonHoverBgColor:$surfaceContainerHighColor !default;
-$plainButtonActiveBgColor:$surfaceContainerHighestColor !default;
+$plainButtonHoverBgColor:$color-surface-high-light !default;
+$plainButtonActiveBgColor:$color-surface-higher-light !default;
 
-$secondaryButtonBg: $primaryColor !default;
+$secondaryButtonBg: $color-secondary-default-light !default;
 $secondaryButtonTextColor:$primaryTextColor !default;
 $secondaryButtonBorder:1px solid $secondaryButtonBg !default;
-$secondaryButtonHoverBg:$surfaceContainerLowestColor !default;
-$secondaryButtonTextHoverColor:$primaryDarkColor !default;
-$secondaryButtonHoverBorderColor:$primaryDarkColor !default;
+$secondaryButtonHoverBg:$color-secondary-high-light !default;
+$secondaryButtonTextHoverColor:$primaryTextColor!default;
+$secondaryButtonHoverBorderColor:$color-secondary-high-light!default;
 $secondaryButtonActiveBg:scale-color($secondaryButtonBg, $lightness: -20%) !default;
 $secondaryButtonTextActiveColor:$secondaryButtonTextColor !default;
 $secondaryButtonActiveBorderColor:scale-color($secondaryButtonBg, $lightness: -20%) !default;
 $secondaryButtonFocusShadow:0 0 0 0.2rem scale-color($secondaryButtonBg, $lightness: 60%) !default;
 
-$infoButtonBg:$infoColor!default;
+$infoButtonBg:$color-info-default-light!default;
 $infoButtonTextColor:$primaryTextColor  !default;
 $infoButtonBorder:1px solid $infoButtonBg !default;
 $infoButtonHoverBg:scale-color($infoButtonBg, $lightness: -10%) !default;
@@ -262,7 +412,7 @@ $infoButtonTextActiveColor:$infoButtonTextColor !default;
 $infoButtonActiveBorderColor:scale-color($infoButtonBg, $lightness: -20%) !default;
 $infoButtonFocusShadow:0 0 0 0.2rem scale-color($infoButtonBg, $lightness: 60%) !default;
 
-$successButtonBg:$validationColor !default;
+$successButtonBg:$color-validation-default-light !default;
 $successButtonTextColor:$primaryTextColor  !default;
 $successButtonBorder:1px solid $successButtonBg !default;
 $successButtonHoverBg:scale-color($successButtonBg, $lightness: -10%) !default;
@@ -273,7 +423,7 @@ $successButtonTextActiveColor:$successButtonTextColor !default;
 $successButtonActiveBorderColor:scale-color($successButtonBg, $lightness: -20%) !default;
 $successButtonFocusShadow:0 0 0 0.2rem scale-color($successButtonBg, $lightness: 60%) !default;
 
-$warningButtonBg:$warningColor !default;
+$warningButtonBg:$color-warning-default-light !default;
 $warningButtonTextColor:$primaryTextColor  !default;
 $warningButtonBorder:1px solid $warningButtonBg !default;
 $warningButtonHoverBg:scale-color($warningButtonBg, $lightness: -10%) !default;
@@ -284,7 +434,7 @@ $warningButtonTextActiveColor:$warningButtonTextColor !default;
 $warningButtonActiveBorderColor:scale-color($warningButtonBg, $lightness: -20%) !default;
 $warningButtonFocusShadow:0 0 0 0.2rem scale-color($warningButtonBg, $lightness: 60%) !default;
 
-$helpButtonBg:$infoColor !default;
+$helpButtonBg:$color-info-default-light !default;
 $helpButtonTextColor:$primaryTextColor !default;
 $helpButtonBorder:1px solid $helpButtonBg !default;
 $helpButtonHoverBg:scale-color($helpButtonBg, $lightness: -10%) !default;
@@ -295,7 +445,7 @@ $helpButtonTextActiveColor:$helpButtonTextColor !default;
 $helpButtonActiveBorderColor:scale-color($helpButtonBg, $lightness: -20%) !default;
 $helpButtonFocusShadow:0 0 0 0.2rem scale-color($helpButtonBg, $lightness: 60%) !default;
 
-$dangerButtonBg:$errorColor!default;
+$dangerButtonBg:$color-error-default-light!default;
 $dangerButtonTextColor:$primaryTextColor  !default;
 $dangerButtonBorder:1px solid $dangerButtonBg !default;
 $dangerButtonHoverBg:scale-color($dangerButtonBg, $lightness: -10%) !default;
@@ -312,9 +462,9 @@ $linkButtonTextHoverDecoration:underline !default;
 $linkButtonFocusShadow:0 0 0 0.2rem $focusOutlineColor !default;
 
 //checkbox
-$checkboxWidth:$sizeL!default;
-$checkboxHeight:$sizeL !default;
-$checkboxBorder:2px solid $outlineColor !default;
+$checkboxWidth:$size-large!default;
+$checkboxHeight:$size-large !default;
+$checkboxBorder:2px solid $color-outline-default-light !default;
 $checkboxIconFontSize:14px !default;
 $checkboxActiveBorderColor:$primaryColor !default;
 $checkboxActiveBg:$primaryColor !default;
@@ -324,9 +474,9 @@ $checkboxIconActiveHoverColor:$primaryTextColor !default;
 $checkboxActiveHoverBorderColor:$primaryDarkerColor !default;
 
 //radiobutton
-$radiobuttonWidth:$sizeL !default;
-$radiobuttonHeight:$sizeL !default;
-$radiobuttonBorder:2px solid $outlineColor !default;
+$radiobuttonWidth:$size-large !default;
+$radiobuttonHeight:$size-large !default;
+$radiobuttonBorder:2px solid $color-outline-default-light !default;
 $radiobuttonIconSize:12px !default;
 $radiobuttonActiveBorderColor:$primaryColor !default;
 $radiobuttonActiveBg:$primaryColor !default;
@@ -338,43 +488,47 @@ $radiobuttonActiveHoverBorderColor:$primaryDarkerColor !default;
 //colorpicker
 $colorPickerPreviewWidth:2rem !default;
 $colorPickerPreviewHeight:2rem !default;
-$colorPickerBg:$surfaceContainerInverseColor!default;
+$colorPickerBg:$color-surface-inverse-light!default;
 $colorPickerBorder:none!default;
-$colorPickerHandleColor:$surfaceContainerLowestColor!default;
+$colorPickerHandleColor:$color-surface-low-light!default;
 
 //togglebutton
-$toggleButtonBg:$surfaceContainerHighColor !default;
-$toggleButtonBorder:1px solid $outlineColor !default;
-$toggleButtonTextColor:$onSurfaceColor !default;
-$toggleButtonIconColor:$onSurfaceColor!default;
-$toggleButtonHoverBg:$surfaceContainerInverseColor !default;
-$toggleButtonHoverBorderColor:$outlineColor !default;
-$toggleButtonTextHoverColor:$onInverseContainerColor !default;
-$toggleButtonIconHoverColor:$onInverseContainerColor !default;
-$toggleButtonActiveBg:$surfaceContainerInverseColor !default;
-$toggleButtonActiveBorderColor:$outlineColor !default;
-$toggleButtonTextActiveColor:$onInverseContainerColor  !default;
-$toggleButtonIconActiveColor:$onInverseContainerColor  !default;
-$toggleButtonActiveHoverBg:$surfaceContainerInverseColor !default;
-$toggleButtonActiveHoverBorderColor:$outlineColor !default;
-$toggleButtonTextActiveHoverColor:white !default;
-$toggleButtonIconActiveHoverColor:white!default;
+$toggleButtonBg:$color-surface-higher-light !default;
+$toggleButtonBorder:4px solid $color-surface-higher-light !default;
+$toggleButtonTextColor:$color-text-primary-light
+ !default;
+$toggleButtonIconColor:$color-text-primary-light
+!default;
+$toggleButtonHoverBg:$color-surface-low-light !default;
+$toggleButtonHoverBorderColor:$color-surface-higher-light !default;
+$toggleButtonTextHoverColor:$color-text-primary-light !default;
+$toggleButtonIconHoverColor:$color-text-primary-light !default;
+$toggleButtonActiveBg:$color-surface-low-light !default;
+$toggleButtonActiveBorderColor:$color-surface-higher-light !default;
+$toggleButtonTextActiveColor:$color-text-primary-light  !default;
+$toggleButtonIconActiveColor:$color-text-primary-light  !default;
+$toggleButtonActiveHoverBg:$color-surface-low-light !default;
+$toggleButtonActiveHoverBorderColor:$color-surface-higher-light !default;
+$toggleButtonTextActiveHoverColor:$color-text-primary-light !default;
+$toggleButtonIconActiveHoverColor:$color-text-primary-light!default;
+$toggleButtonBorderRadius: $radius-small;
 
 //inplace
 $inplacePadding:$inputPadding !default;
-$inplaceHoverBg:$surfaceContainerHighColor !default;
-$inplaceTextHoverColor:$onSurfaceColor !default;
+$inplaceHoverBg:$color-surface-high-light !default;
+$inplaceTextHoverColor:$color-text-primary-light
+ !default;
 
 //rating
 $ratingIconFontSize:1.143rem !default;
 $ratingCancelIconColor:#ea5455 !default;
 $ratingCancelIconHoverColor:#e73d3e !default;
-$ratingStarIconOffColor:$surfaceContainerInverseColor!default;
+$ratingStarIconOffColor:$color-surface-inverse-light!default;
 $ratingStarIconOnColor:$primaryColor !default;
 $ratingStarIconHoverColor:$primaryColor !default;
 
 //slider
-$sliderBg:$outlineVariantColor !default;
+$sliderBg:$color-surface-higher-light !default;
 $sliderBorder:0 none !default;
 $sliderHorizontalHeight:.286rem !default;
 $sliderVerticalWidth:0.286rem !default;
@@ -390,30 +544,31 @@ $sliderRangeBg:$primaryColor !default;
 //calendar
 $calendarTableMargin:.5rem 0 !default;
 $calendarPadding:.5rem !default;
-$calendarBg:linear-gradient(90deg, $primaryColor 0%, scale-color($primaryColor, $red: 25%) 100%) !default;
+$calendarBg:$color-surface-low-light!default;
 $calendarInlineBg:$calendarBg !default;
-$calendarTextColor:$primaryTextColor !default;
+$calendarTextColor:$color-text-primary-light !default;
 $calendarBorder:0 none !default;
 $calendarOverlayBorder:$inputOverlayBorder !default;
-
+$calendarHeaderTextColor: $color-text-primary-light !default;
 $calendarHeaderPadding:.5rem !default;
 $calendarHeaderBg:transparent !default;
 $calendarInlineHeaderBg:$calendarBg !default;
-$calendarHeaderBorder:1px solid rgba(255,255,255,.2) !default;
-$calendarHeaderTextColor:$primaryTextColor !default;
-$calendarHeaderFontWeight:700 !default;
+$calendarHeaderBorder:$color-outline-low-light !default;
+$calendarHeaderTextColor:$color-text-primary-light !default;
+$calendarHeaderFontWeight:400 !default;
 $calendarHeaderCellPadding:.5rem !default;
-$calendarMonthYearHeaderHoverTextColor: $primaryColor !default;
+$calendarMonthYearHeaderHoverTextColor:$color-primary-default-light !default;
 
 $calendarCellDatePadding:.5rem !default;
 $calendarCellDateWidth:2.5rem !default;
 $calendarCellDateHeight:2.5rem !default;
-$calendarCellDateBorderRadius:50% !default;
+$calendarCellDateBorderRadius:0rem !default;
 $calendarCellDateBorder:1px solid transparent !default;
-$calendarCellDateHoverBg:rgba(255,255,255,.2) !default;
-$calendarCellDateTodayBg:rgba(255,255,255,.1) !default;
+$calendarCellDateHoverBg:$color-primary-default-light!default;
+$calendarCellDateHoverTextColor:$color-text-bright-light!default;
+$calendarCellDateTodayBg:$color-surface-low-light !default;
 $calendarCellDateTodayBorderColor:transparent !default;
-$calendarCellDateTodayTextColor:$primaryTextColor !default;
+$calendarCellDateTodayTextColor:$color-text-primary-light!default;
 
 $calendarButtonBarPadding:1rem 0 !default;
 $calendarTimePickerPadding:.5rem !default;
@@ -431,83 +586,87 @@ $inputSwitchHandleWidth:1.250rem !default;
 $inputSwitchHandleHeight:1.250rem !default;
 $inputSwitchHandleBorderRadius:50% !default;
 $inputSwitchSliderPadding:.25rem !default;
-$inputSwitchSliderOffBg:$surfaceContainerInverseColor !default;
-$inputSwitchHandleOffBg:$surfaceContainerLowestColor !default;
-$inputSwitchSliderOffHoverBg:scale-color($surfaceContainerInverseColor, $lightness: -10%) !default;
+$inputSwitchSliderOffBg:$color-surface-highest-light !default;
+$inputSwitchHandleOffBg:$color-surface-low-light !default;
+$inputSwitchSliderOffHoverBg:scale-color($color-surface-inverse-light, $lightness: -10%) !default;
 $inputSwitchSliderOnBg:$primaryColor !default;
 $inputSwitchSliderOnHoverBg:$primaryDarkColor !default;
 $inputSwitchHandleOnBg:$primaryTextColor !default;
 
 //panel
-$panelHeaderBorderColor:$outlineVariantColor !default;
-$panelHeaderBorder:1px solid $outlineVariantColor !default;
-$panelHeaderBg:$surfaceContainerMidColor !default;
-$panelHeaderTextColor:$onSurfaceVariantColor !default;
+$panelHeaderBorderColor:$color-outline-low-light !default;
+$panelHeaderBorder:1px solid $color-outline-low-light !default;
+$panelHeaderBg:$color-surface-high-light !default;
+$panelHeaderTextColor:$color-text-secondary-light !default;
 $panelHeaderFontWeight:700 !default;
 $panelHeaderPadding:1.25rem !default;
 $panelToggleableHeaderPadding:.75rem 1.25rem !default;
 
-$panelHeaderHoverBg:$surfaceContainerHighColor !default;
-$panelHeaderHoverBorderColor:$outlineColor !default;
-$panelHeaderTextHoverColor:$onSurfaceColor !default;
+$panelHeaderHoverBg:$color-surface-high-light !default;
+$panelHeaderHoverBorderColor:$color-outline-default-light !default;
+$panelHeaderTextHoverColor:$color-text-primary-light
+ !default;
 
-$panelContentBorderColor: $outlineVariantColor !default;
-$panelContentBorder:1px solid $outlineVariantColor !default;
-$panelContentBg:$surfaceContainerLowestColor!default;
+$panelContentBorderColor: $color-outline-low-light !default;
+$panelContentBorder:1px solid $color-outline-low-light !default;
+$panelContentBg:$color-surface-low-light!default;
 $panelContentEvenRowBg:scale-color($panelContentBg, $lightness: -1%) !default;
-$panelContentTextColor:$onSurfaceColor !default;
+$panelContentTextColor:$color-text-primary-light
+ !default;
 $panelContentPadding:1.25rem !default;
 
-$panelFooterBorder:1px solid $outlineVariantColor !default;
-$panelFooterBg:$surfaceContainerLowestColor !default;
-$panelFooterTextColor:$onSurfaceVariantColor !default;
+$panelFooterBorder:1px solid $color-outline-low-light !default;
+$panelFooterBg:$color-surface-low-light !default;
+$panelFooterTextColor:$color-text-secondary-light!default;
 $panelFooterPadding:0.75rem 1.25rem !default;
 
 //accordion
 $accordionSpacing:4px !default;
 $accordionHeaderBorder:none !default;
-$accordionHeaderBg:$surfaceContainerLowestColor !default;
+$accordionHeaderBg:$color-surface-low-light !default;
 $accordionHeaderTextColor:$panelHeaderTextColor !default;
 $accordionHeaderFontWeight:$panelHeaderFontWeight !default;
 $accordionHeaderPadding:$panelHeaderPadding !default;
 
-$accordionHeaderHoverBg:$primaryContainerColor !default;
+$accordionHeaderHoverBg:$color-primary-low-light !default;
 $accordionHeaderHoverBorderColor:$primaryColor !default;
-$accordionHeaderTextHoverColor:$onPrimaryContainerColor!default;
+$accordionHeaderTextHoverColor:$color-primary-higher-light!default;
 
 $accordionHeaderActiveBg:none!default;
 $accordionHeaderActiveBorderColor:none !default;
 $accordionHeaderTextActiveColor:$primaryColor !default;
 
-$accordionHeaderActiveHoverBg:$primaryContainerColor !default;
+$accordionHeaderActiveHoverBg:$color-primary-low-light !default;
 $accordionHeaderActiveHoverBorderColor:none !default;
-$accordionHeaderTextActiveHoverColor:$onPrimaryContainerColor !default;
+$accordionHeaderTextActiveHoverColor:$color-primary-higher-light !default;
 
-$accordionContentBorder:$outlineVariantColor !default;
+$accordionContentBorder:$color-outline-low-light !default;
 $accordionContentBg:$panelContentBg !default;
 $accordionContentTextColor:$panelContentTextColor !default;
 $accordionContentPadding:$panelContentPadding !default;
 
 //tabview
-$tabviewNavBorder:1px solid $outlineVariantColor !default;
+$tabviewNavBorder:1px solid $color-outline-low-light !default;
 $tabviewNavBorderWidth:0 0 2px 0 !default;
-$tabviewNavBg:$surfaceContainerLowestColor !default;
+$tabviewNavBg:$color-surface-low-light !default;
 
 $tabviewHeaderSpacing:0 !default;
-$tabviewHeaderBorder:solid $outlineVariantColor !default;
+$tabviewHeaderBorder:solid $color-outline-low-light !default;
 $tabviewHeaderBorderWidth:0 0 2px 0 !default;
-$tabviewHeaderBorderColor:transparent transparent $outlineVariantColor transparent !default;
-$tabviewHeaderBg:$surfaceContainerLowestColor !default;
-$tabviewHeaderTextColor:$onSurfaceColor !default;
+$tabviewHeaderBorderColor:transparent transparent $color-outline-low-light transparent !default;
+$tabviewHeaderBg:$color-surface-low-light !default;
+$tabviewHeaderTextColor:$color-text-primary-light
+ !default;
 $tabviewHeaderFontWeight:$panelHeaderFontWeight !default;
 $tabviewHeaderPadding:$panelHeaderPadding !default;
 $tabviewHeaderMargin:0 0 -2px 0 !default;
 
-$tabviewHeaderHoverBg:$surfaceContainerLowestColor !default;
-$tabviewHeaderHoverBorderColor:$outlineColor !default;
-$tabviewHeaderTextHoverColor:$onSurfaceColor !default;
+$tabviewHeaderHoverBg:$color-surface-low-light !default;
+$tabviewHeaderHoverBorderColor:$color-outline-default-light !default;
+$tabviewHeaderTextHoverColor:$color-text-primary-light
+ !default;
 
-$tabviewHeaderActiveBg:$surfaceContainerLowestColor !default;
+$tabviewHeaderActiveBg:$color-surface-low-light !default;
 $tabviewHeaderActiveBorderColor: $primaryColor !default;
 $tabviewHeaderTextActiveColor:$primaryColor !default;
 
@@ -517,19 +676,19 @@ $tabviewContentTextColor:$panelContentTextColor !default;
 $tabviewContentPadding:$panelContentPadding !default;
 
 //upload
-$fileUploadProgressBarHeight:$sizeXS !default;
+$fileUploadProgressBarHeight:$size-x-small !default;
 $fileUploadContentPadding:2rem 1rem !default;
 
 //scrollpanel
 $scrollPanelTrackBorder:0 none !default;
-$scrollPanelTrackBg:$surfaceContainerLowColor !default;
+$scrollPanelTrackBg:$color-surface-higher-light !default;
 
 //card
 $cardBodyPadding:1.25rem !default;
 $cardTitleFontSize:1.5rem !default;
 $cardTitleFontWeight:700 !default;
 $cardSubTitleFontWeight:400 !default;
-$cardSubTitleColor:$onSurfaceVariantColor !default;
+$cardSubTitleColor:$color-text-secondary-light!default;
 $cardContentPadding:1.25rem 0 !default;
 $cardFooterPadding:1.25rem 0 0 0 !default;
 $cardShadow:0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12) !default;
@@ -545,9 +704,9 @@ $editorContentBorder:$panelContentBorder !default;
 $editorContentBg:$panelContentBg !default;
 
 //paginator
-$paginatorBg:$surfaceContainerLowestColor !default;
+$paginatorBg:$color-surface-low-light !default;
 $paginatorTextColor:$textColor !default;
-$paginatorBorder:solid $outlineVariantColor !default;
+$paginatorBorder:solid $color-outline-low-light !default;
 $paginatorBorderWidth:0 !default;
 $paginatorPadding:.5rem 1rem !default;
 $paginatorElementWidth:$buttonIconOnlyWidth !default;
@@ -555,7 +714,7 @@ $paginatorElementHeight:$buttonIconOnlyWidth !default;
 $paginatorElementBg:transparent !default;
 $paginatorElementBorder:0 none !default;
 $paginatorElementIconColor:$textColor !default;
-$paginatorElementHoverBg:$surfaceContainerHighColor !default;
+$paginatorElementHoverBg:$color-surface-high-light !default;
 $paginatorElementHoverBorderColor:transparent !default;
 $paginatorElementIconHoverColor:$textColor !default;
 $paginatorElementBorderRadius:50% !default;
@@ -563,50 +722,55 @@ $paginatorElementMargin:.143rem !default;
 $paginatorElementPadding:0 !default;
 
 //table
-$tableHeaderBorder:0 0 1px 0 solid $outlineVariantLighterColor !default;
+$tableHeaderBorder:0 0 1px 0 solid $color-outline-low-light !default;
 $tableHeaderBorderWidth:0 0 1px 0 !default;
-$tableHeaderBg:$surfaceContainerLowestColor !default;
+$tableHeaderBg:$color-surface-low-light !default;
 $tableHeaderTextColor:$textSecondaryColor !default;
 $tableHeaderFontWeight:400 !default;
 $tableHeaderPadding:1rem 1rem !default;
 
-$tableHeaderCellPadding:1rem 1rem !default;
-$tableHeaderCellBg:$surfaceContainerLowestColor !default;
-$tableHeaderCellTextColor:$onSurfaceVariantColor !default;
+$tableHeaderCellPadding:0rem 0rem !default;
+$tableHeaderCellBg:$color-surface-low-light !default;
+$tableHeaderCellTextColor:$color-text-secondary-light!default;
 $tableHeaderCellFontWeight:500 !default;
-$tableHeaderCellBorder:0 0 1px 0 solid $outlineVariantLighterColor !default;
+$tableHeaderCellBorder:0 0 1px 0 solid $color-outline-low-light !default;
 $tableHeaderCellBorderWidth:1px !default;
-$tableHeaderCellHoverBg:$surfaceContainerLowColor !default;
-$tableHeaderCellTextHoverColor:$onSurfaceColor !default;
-$tableHeaderCellIconColor:$onSurfaceVariantColor !default;
-$tableHeaderCellIconHoverColor:$onPrimaryContainerColor !default;
-$tableHeaderCellHighlightBg:$onPrimaryContainerColor !default;
-$tableHeaderCellHighlightTextColor:$highlightTextColor !default;
-$tableHeaderCellHighlightHoverBg:$highlightBg !default;
-$tableHeaderCellHighlightTextHoverColor:$highlightTextColor !default;
+$tableHeaderCellHoverBg:$color-surface-higher-light !default;
+$tableHeaderCellTextHoverColor:$color-text-primary-light
+ !default;
+$tableHeaderCellIconColor:$color-text-secondary-light!default;
+$tableHeaderCellIconHoverColor:$color-primary-higher-light !default;
+$tableHeaderCellhighlightBg:$color-primary-higher-light !default;
+$tableHeaderCellHighlightTextColor:$color-text-primary-light!default;
+$tableHeaderCellHighlightHoverBg:$color-surface-high-light !default;
+$tableHeaderCellHighlightTextHoverColor:$color-text-primary-light!default;
 $tableSortableColumnBadgeSize:1.143rem !default;
 
-$tableBodyRowBg:$surfaceContainerLowestColor !default;
-$tableBodyRowTextColor:$onSurfaceColor !default;
+$tableBodyRowBg:$color-surface-low-light !default;
+$tableBodyRowTextColor:$color-text-primary-light
+ !default;
 $tableBodyRowEvenBg:scale-color($tableBodyRowBg, $lightness: -1%) !default;
-$tableBodyRowHoverBg:$surfaceContainerLowColor !default;
-$tableBodyRowTextHoverColor:$onSurfaceColor !default;
-$tableBodyCellBorder:0 0 1px 0 solid $outlineVariantLighterColor !default;
+$tableBodyRowHoverBg:$color-surface-higher-light !default;
+$tableBodyRowTextHoverColor:$color-text-primary-light
+ !default;
+$tableBodyCellBorder:0 0 1px 0 solid $color-outline-low-light !default;
 $tableBodyCellBorderWidth:0 0 1px 0 !default;
 $tableBodyCellPadding:1.5rem 1rem !default;
 
 $tableFooterCellPadding:1rem 1rem !default;
-$tableFooterCellBg:$surfaceContainerLowestColor !default;
-$tableFooterCellTextColor:$onSurfaceColor !default;
+$tableFooterCellBg:$color-surface-low-light !default;
+$tableFooterCellTextColor:$color-text-primary-light
+ !default;
 $tableFooterCellFontWeight:700 !default;
-$tableFooterCellBorder:1px solid $outlineVariantColor !default;
+$tableFooterCellBorder:1px solid $color-outline-low-light !default;
 $tableFooterCellBorderWidth:0 0 1px 0 !default;
 $tableResizerHelperBg:$primaryColor !default;
 
-$tableFooterBorder:1px solid $outlineVariantColor !default;
+$tableFooterBorder:1px solid $color-outline-low-light !default;
 $tableFooterBorderWidth:0 0 1px 0 !default;
-$tableFooterBg:$surfaceContainerLowestColor !default;
-$tableFooterTextColor:$onSurfaceColor !default;
+$tableFooterBg:$color-surface-low-light !default;
+$tableFooterTextColor:$color-text-primary-light
+ !default;
 $tableFooterFontWeight:700 !default;
 $tableFooterPadding:1rem 1rem !default;
 
@@ -620,7 +784,7 @@ $tableScaleLG:1.25 !default;
 //dataview
 $dataViewContentPadding:0 !default;
 $dataViewContentBorder:0 none !default;
-$dataViewListItemBorder:solid $outlineVariantColor !default;
+$dataViewListItemBorder:solid $color-outline-low-light !default;
 $dataViewListItemBorderWidth:0 0 1px 0 !default;
 
 //schedule
@@ -634,7 +798,8 @@ $treeContainerPadding:0.286rem !default;
 $treeNodePadding:0.143rem !default;
 $treeNodeContentPadding:.5rem !default;
 $treeNodeChildrenPadding:0 0 0 1rem !default;
-$treeNodeIconColor:$onSurfaceColor !default;
+$treeNodeIconColor:$color-text-primary-light
+ !default;
 
 //timeline
 $timelineVerticalEventContentPadding:0 1rem !default;
@@ -648,7 +813,7 @@ $timelineEventConnectorSize:2px !default;
 $timelineEventColor:$primaryColor !default;
 
 //org chart
-$organizationChartConnectorColor:$outlineVariantColor !default;
+$organizationChartConnectorColor:$color-outline-low-light !default;
 
 //message
 $messageMargin:1rem 0 !default;
@@ -666,7 +831,7 @@ $inlineMessageTextFontSize:1rem !default;
 $inlineMessageBorderWidth:1px !default;
 
 //toast
-$toastIconFontSize:$sizeL !default;
+$toastIconFontSize:$size-large !default;
 $toastMessageTextMargin:0 0 0 1rem !default;
 $toastMargin:0 0 1rem 0 !default;
 $toastPadding:1rem !default;
@@ -677,22 +842,22 @@ $toastTitleFontWeight:700 !default;
 $toastDetailMargin:$inlineSpacing 0 0 0 !default;
 
 //severities
-$infoMessageBg:$infoContainerColor !default;
-$infoMessageBorder:solid $onInfoContainerColor !default;
-$infoMessageTextColor:$onInfoContainerColor !default;
-$infoMessageIconColor:$onInfoContainerColor !default;
-$successMessageBg:$validationContainerColor !default;
-$successMessageBorder:solid $onValidationContainerColor !default;
-$successMessageTextColor:$onValidationContainerColor !default;
-$successMessageIconColor:$onValidationContainerColor !default;
-$warningMessageBg:$warningContainerColor !default;
-$warningMessageBorder:solid $onWarningContainerColor !default;
-$warningMessageTextColor:$onWarningContainerColor!default;
-$warningMessageIconColor:$onWarningContainerColor !default;
-$errorMessageBg: $errorContainerColor !default;
-$errorMessageBorder:solid $onErrorContainerColor  !default;
-$errorMessageTextColor: $onErrorContainerColor !default;
-$errorMessageIconColor: $onErrorContainerColor !default;
+$infoMessageBg:$color-info-low-light !default;
+$infoMessageBorder:solid $color-info-default-light!default;
+$infoMessageTextColor:$color-info-higher-light!default;
+$infoMessageIconColor:$color-info-higher-light!default;
+$successMessageBg:$color-validation-low-light !default;
+$successMessageBorder:solid $color-validation-default-light!default;
+$successMessageTextColor:$color-validation-higher-light!default;
+$successMessageIconColor:$color-validation-higher-light!default;
+$warningMessageBg:$color-warning-low-light !default;
+$warningMessageBorder:solid $color-warning-default-light !default;
+$warningMessageTextColor:$color-warning-higher-light!default;
+$warningMessageIconColor:$color-warning-higher-light !default;
+$errorMessageBg:$color-error-low-light !default;
+$errorMessageBorder:solid $color-error-default-light  !default;
+$errorMessageTextColor: $color-error-higher-light !default;
+$errorMessageIconColor: $color-error-higher-light !default;
 
 //overlays
 $overlayContentBorder:0 none !default;
@@ -700,9 +865,9 @@ $overlayContentBg:$panelContentBg !default;
 $overlayContainerShadow:0 1px 3px rgba(0,0,0,.3) !default;
 
 //dialog
-$dialogHeaderBg:$surfaceContainerLowestColor !default;
+$dialogHeaderBg:$color-surface-low-light !default;
 $dialogHeaderBorder:0 none !default;
-$dialogHeaderTextColor:$onSurfaceVariantColor !default;
+$dialogHeaderTextColor:$color-text-secondary-light!default;
 $dialogHeaderFontWeight:700 !default;
 $dialogHeaderFontSize:1.25rem !default;
 $dialogHeaderPadding:1.5rem !default;
@@ -715,37 +880,42 @@ $confirmPopupContentPadding:$panelContentPadding !default;
 $confirmPopupFooterPadding:0 1.25rem 1.25rem 1.25rem !default;
 
 //tooltip
-$tooltipBg:$surfaceContainerInverseColor !default;
-$tooltipTextColor:$onInverseContainerColor!default;
+$tooltipBg:$color-surface-inverse-light !default;
+$tooltipTextColor:$color-text-primary-inverse-light!default;
 $tooltipPadding:$inputPadding !default;
 
 //steps
-$stepsItemBg:$surfaceContainerLowestColor !default;
+$stepsItemBg:$color-surface-low-light !default;
 $stepsItemBorder:none !default;
-$stepsItemTextColor:$onSurfaceColor !default;
+$stepsItemTextColor:$color-text-primary-light
+ !default;
 $stepsItemNumberWidth:2rem !default;
 $stepsItemNumberHeight:2rem !default;
 $stepsItemNumberFontSize:1.143rem !default;
-$stepsItemNumberColor:$onSurfaceColor !default;
+$stepsItemNumberColor:$color-text-primary-light
+ !default;
 $stepsItemNumberBorderRadius:none !default;
 $stepsItemActiveFontWeight:700 !default;
 
 //progressbar
 $progressBarHeight:1.5rem !default;
 $progressBarBorder:0 none !default;
-$progressBarBg:$surfaceContainerInverseColor !default;
+$progressBarBg:$color-surface-highest-light !default;
 $progressBarValueBg:$primaryColor !default;
 $progressBarValueTextColor:$primaryTextColor !default;
 
 //menu (e.g. menu, menubar, tieredmenu)
 $menuWidth:12.5rem !default;
-$menuBg:$surfaceContainerLowestColor !default;
+$menuBg:$color-surface-low-light !default;
 $menuBorder:none!default;
-$menuTextColor:$onSurfaceColor !default;
+$menuTextColor:$color-text-primary-light
+ !default;
 $menuitemPadding:.75rem 1.25rem !default;
 $menuitemBorderRadius:0 !default;
-$menuitemTextColor:$onSurfaceColor !default;
-$menuitemIconColor:$onSurfaceColor!default;
+$menuitemTextColor:$color-text-primary-light
+ !default;
+$menuitemIconColor:$color-text-primary-light
+!default;
 $menuitemTextHoverColor:white !default;
 $menuitemIconHoverColor:white!default;
 $menuitemHoverBg:$primaryColor !default;
@@ -755,11 +925,12 @@ $menuitemActiveBg:$primaryColor!default;
 $menuitemSubmenuIconFontSize:.875rem !default;
 $submenuHeaderMargin:0 !default;
 $submenuHeaderPadding:.75rem 1.25rem !default;
-$submenuHeaderBg:$surfaceContainerLowestColor !default;
-$submenuHeaderTextColor:$onSurfaceColor!default;
+$submenuHeaderBg:$color-surface-low-light !default;
+$submenuHeaderTextColor:$color-text-primary-light
+!default;
 $submenuHeaderBorderRadius:0 !default;
 $submenuHeaderFontWeight:700 !default;
-$overlayMenuBg:$surfaceContainerLowestColor !default;
+$overlayMenuBg:$color-surface-low-light !default;
 $overlayMenuBorder:0 none !default;
 $overlayMenuShadow:0 2px 12px 0 rgba(0,0,0,.1) !default;
 $verticalMenuPadding:.25rem 0 !default;
@@ -776,7 +947,7 @@ $breadcrumbLastItemIconColor:$menuitemIconColor !default;
 $breadcrumbSeparatorColor:$menuitemTextColor !default;
 
 $horizontalMenuPadding:.5rem !default;
-$horizontalMenuBg:$surfaceContainerLowestColor !default;
+$horizontalMenuBg:$color-surface-low-light !default;
 $horizontalMenuBorder:$menuBorder !default;
 $horizontalMenuTextColor:$menuTextColor !default;
 $horizontalMenuRootMenuitemPadding:$menuitemPadding !default;
@@ -797,12 +968,12 @@ $badgeMinWidth:1.5rem !default;
 $badgeHeight:1.5rem !default;
 $badgeFontWeight:700 !default;
 $badgeFontSize:1rem !default;
-
+$tagBorderRadius: $radius-small !default;
 $tagPadding:.25rem .4rem !default;
 
 //carousel
 $carouselIndicatorsPadding:1rem !default;
-$carouselIndicatorBg:$surfaceContainerInverseColor !default;
+$carouselIndicatorBg:$color-surface-inverse-light !default;
 $carouselIndicatorHoverBg:$primaryColor !default;
 $carouselIndicatorBorderRadius:0 !default;
 $carouselIndicatorWidth:2rem !default;
@@ -835,8 +1006,8 @@ $galleriaCaptionTextColor:$primaryTextColor !default;
 $galleriaCaptionPadding:1rem !default;
 
 $galleriaIndicatorsPadding:1rem !default;
-$galleriaIndicatorBg:$surfaceContainerInverseColor !default;
-$galleriaIndicatorHoverBg:$shade500 !default;
+$galleriaIndicatorBg:$color-surface-inverse-light !default;
+$galleriaIndicatorHoverBg:$seed-black !default;
 $galleriaIndicatorBorderRadius:50% !default;
 $galleriaIndicatorWidth:1rem !default;
 $galleriaIndicatorHeight:1rem !default;
@@ -847,9 +1018,9 @@ $galleriaIndicatorHoverBgOnItem:rgba(255,255,255,.6) !default;
 $galleriaThumbnailContainerBg:rgba(0,0,0,.9) !default;
 $galleriaThumbnailContainerPadding:1rem .25rem !default;
 $galleriaThumbnailNavigatorBg:transparent !default;
-$galleriaThumbnailNavigatorColor:$shade100 !default;
+$galleriaThumbnailNavigatorColor:black !default;
 $galleriaThumbnailNavigatorHoverBg:rgba(255,255,255,0.1) !default;
-$galleriaThumbnailNavigatorHoverColor:$shade100 !default;
+$galleriaThumbnailNavigatorHoverColor:black !default;
 $galleriaThumbnailNavigatorBorderRadius:50% !default;
 $galleriaThumbnailNavigatorWidth:2rem !default;
 $galleriaThumbnailNavigatorHeight:2rem !default;
@@ -860,14 +1031,14 @@ $dividerHorizontalPadding:0 1.25rem !default;
 $dividerVerticalMargin:0 1.25rem !default;
 $dividerVerticalPadding:1.25rem 0 !default;
 $dividerSize:1px !default;
-$dividerColor:$outlineVariantColor !default;
+$dividerColor:$color-outline-low-light !default;
 
 //avatar
-$avatarBg:$surfaceContainerHighColor !default;
+$avatarBg:$color-surface-high-light !default;
 $avatarTextColor:$textColor !default;
 
 //chip
-$chipBg:$surfaceContainerHighColor !default;
+$chipBg:$color-surface-high-light !default;
 $chipTextColor:$textColor !default;
 $chipBorderRadius: 1rem !default;
 
@@ -878,15 +1049,15 @@ $scrollTopWidth:3rem !default;
 $scrollTopHeight:3rem !default;
 $scrollTopBorderRadius:50% !default;
 $scrollTopFontSize:1.5rem !default;
-$scrollTopTextColor:$surfaceContainerLowColor !default;
+$scrollTopTextColor:$color-surface-higher-light !default;
 
 //skeleton
-$skeletonBg:$surfaceContainerHighestColor !default;
+$skeletonBg:$color-surface-higher-light !default;
 $skeletonAnimationBg:rgba(255,255,255,0.4) !default;
 
 //splitter
-$splitterGutterBg:$surfaceContainerLowColor !default;
-$splitterGutterHandleBg:$surfaceContainerHighestColor!default;
+$splitterGutterBg:$color-surface-higher-light !default;
+$splitterGutterHandleBg:$color-surface-higher-light!default;
 
 //speeddial
 $speedDialButtonWidth: 4rem !default;
@@ -894,7 +1065,7 @@ $speedDialButtonHeight: 4rem !default;
 $speedDialButtonIconFontSize: 1.3rem !default;
 $speedDialActionWidth: 3rem !default;
 $speedDialActionHeight: 3rem !default;
-$speedDialActionBg: $surfaceContainerInverseColor !default;
+$speedDialActionBg: $color-surface-inverse-light !default;
 $speedDialActionHoverBg: #022354 !default;
 $speedDialActionTextColor: #fff !default;
 $speedDialActionTextHoverColor: #fff !default;
@@ -926,14 +1097,9 @@ $imagePreviewActionIconFontSize:1.5rem !default;
 $imagePreviewActionIconBorderRadius:50% !default;
 
 :root {
-    --surface-a:#{$shade000};
-    --surface-b:#{$shade100};
-    --surface-c:#{$shade200};
-    --surface-d:#{$shade300};
-    --surface-e:#{$shade000};
-    --surface-f:#{$shade000};
-    --text-color:#{$shade700};
-    --text-color-secondary:#{$shade600};
+ 
+    --text-color:#{$color-text-primary-light};
+    --text-color-secondary:#{$color-text-secondary-light};
     --primary-color:#{$primaryColor};
     --primary-color-text:#{$primaryTextColor};
     --font-family:#{$fontFamily};
@@ -961,15 +1127,15 @@ $imagePreviewActionIconBorderRadius:50% !default;
     --content-padding:#{$panelContentPadding};
     --inline-spacing:#{$inlineSpacing};
     --border-radius:#{$borderRadius};
-    --surface-ground:#{$surfaceColor};
-    --surface-section:#{$surfaceContainerLowestColor};
-    --surface-card:#{$surfaceContainerLowestColor};
-    --surface-overlay:#{$surfaceContainerLowestColor};
-    --surface-border:#{$outlineVariantColor};
-    --surface-hover:#{$surfaceContainerLowColor};
+    --surface-ground:#{$color-surface-lowest-light};
+    --surface-section:#{$color-surface-low-light};
+    --surface-card:#{$color-surface-low-light};
+    --surface-overlay:#{$color-surface-low-light};
+    --surface-border:#{$color-outline-low-light};
+    --surface-hover:#{$color-surface-higher-light};
     --maskbg: #{$maskBg};
-    --highlight-bg: #{$surfaceContainerHighColor};
-    --highlight-text-color: #{$highlightTextColor};
+    --highlight-bg: #{$color-surface-high-light};
+    --highlight-text-color: #{$color-text-primary-light};
     --focus-ring: #{$focusShadow};
     color-scheme: light;
 }

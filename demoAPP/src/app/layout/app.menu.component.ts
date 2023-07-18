@@ -27,7 +27,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     { label: 'Colours', icon: 'pi pi-fw pi-palette', routerLink: ['/designlanguage/colours'] },
                     { label: 'Typography', icon: 'pi pi-fw pi-language', routerLink: ['/designlanguage/typography'] },
-                    { label: 'Spacing', icon: 'pi pi-fw pi-arrows-h', routerLink: ['/designlanguage/spacing'] },
+                    { label: 'Spacing and sizing', icon: 'pi pi-fw pi-arrows-h', routerLink: ['/designlanguage/spacing'] },
                     { label: 'Icons', icon: 'pi pi-fw pi-th-large', routerLink: ['/designlanguage/icons'] }
                 ]
             },

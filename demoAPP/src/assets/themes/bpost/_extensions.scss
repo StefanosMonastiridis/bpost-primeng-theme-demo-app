@@ -1,15 +1,74 @@
-/* Customizations to the designer theme should be defined here */
+html {
+   
+    font-size: $scale-medium;
+}
 
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--surface-ground);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+
+.p-inputtext{
+    line-height: 1.5;
+}
+
+.p-togglebutton.p-button {
+    padding: 4px 8px!important;
+    font-size: $size-small !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    
+}
+.p-selectbutton{
+    .p-button{
+        padding: 4px 8px!important;
+        font-size: $size-small !important;
+        font-weight: 500 !important;
+        line-height: 20px !important;
+    }
+}
+
+.p-multiselect-token {
+    
+    background: $color-secondary-low-light!important;
+    color: $color-secondary-high-light!important;
+    border-radius: $borderRadius;
+
+    .p-multiselect-token-icon {
+        margin-left: $inlineSpacing;
+    }
+}
+
+
+.p-dropdown-panel{
+    border-radius: 0 !important;
+    margin-top: 8px !important;
+    border-width: 1px !important;
+    border-color: $color-outline-high-light !important;
+}
 
 .p-datepicker {
     .p-datepicker-header {
         .p-datepicker-prev,
         .p-datepicker-next {
-            color: $primaryTextColor;
+            color: $color-text-secondary-light;
 
             &:enabled:hover {
-                color: $primaryTextColor;
-                background-color: rgba(255,255,255,.2);
+                color: $color-primary-default-light;
+                background-color: $color-surface-low-light;
             }
         }
     }
@@ -51,14 +110,15 @@
         margin: $calendarTableMargin;
 
         th {
-            color: rgba(255,255,255,.7);
+            color: $color-text-primary-light;
+            font-weight: 400!important;
         }
 
         td {
             > span {
                 &.p-highlight {
                     color: $primaryTextColor;
-                    background: rgba(255,255,255,.3);
+                    background: $color-primary-default-light;
                 }
             }
 
@@ -76,8 +136,8 @@
     .p-monthpicker {
         .p-monthpicker-month {
             &.p-highlight {
-                color: $primaryTextColor;
-                background: rgba(255,255,255,.3);
+                color: $color-secondary-default-light;
+                background: $color-secondary-low-light;
             }
         }
     }
@@ -87,7 +147,7 @@
     border-radius: $borderRadiusButton;
     .p-button-label {
         font-weight: 500;
-        font-size: $fontSizeButton;
+        
     }
 }
 
@@ -96,6 +156,53 @@
         background-color: $primaryColor;
     }
 }
+
+.p-message-wrapper{
+    p{
+        margin-top: 0!important;
+        >i{
+margin-right: $spacing-large!important;
+        }
+    }
+}
+.p-datepicker-trigger, .p-autocomplete-dropdown{
+    background-color: $color-surface-low-light!important;
+    color: $color-primary-default-light!important;
+    border-color: $color-outline-default-light!important;
+    border-width: 1px 1px 1px 0px!important;
+    &:hover{
+        border-color: $color-outline-high-light!important;
+    }
+}
+
+
+
+.p-inputnumber-button{
+    background-color: $color-surface-low-light!important;
+    color: $color-primary-default-light!important;
+    border-color: $color-outline-default-light!important;
+    border-width: 0px!important;
+    &:hover{
+        border-color: $color-outline-high-light!important;
+    }
+}
+
+.p-inputnumber-button-up{
+    border-color: $color-outline-default-light!important;
+    border-width: 1px 1px 0px 0px!important;
+}
+
+.p-inputnumber-button-down{
+    border-color: $color-outline-default-light!important;
+    border-width: 0px 1px 1px 0px!important;
+}
+
+.p-calendar, .p-autocomplete, .p-inputnumber{
+    .p-inputtext{
+        border-width: 1px 0px 1px 1px!important;
+    }
+}
+
 
 .p-galleria {
     .p-galleria-indicators .p-galleria-indicator.p-highlight button {
@@ -117,12 +224,21 @@
     }
 }
 
+.p-datatable {
+    .p-datatable-tbody {
+        >tr>td{
+            border-bottom: 1px solid $color-outline-low-light!important;
+        }
+    }}
+
+
+
 .p-dropdown{
     .p-dropdown-trigger-icon{
         color: $primaryColor;
     }
     .p-dropdown-clear-icon{
-        color: $onSurfaceVariantColor;
+        color: $color-text-secondary-light;
     }
 }
 
@@ -143,35 +259,65 @@
 
 
 .gap-small{
-    gap: $sizeS;
+    gap: $size-small;
 }
 
 .padding-small{
-    padding: $sizeS;
+    padding: $size-small;
 }
 
 .margin-small{
-    margin: $sizeS;
+    margin: $size-small;
 }
 
 .container{
    
-    border-radius: $borderRadiusContainer;
-    background: $surfaceContainerLowestColor;
+    border-radius: $radius-large;
+    background: $color-surface-low-light;
     
 }
 
 .p-datatable-header{
-    background-color: $surfaceContainerLowestColor;
-    border-radius: $borderRadiusContainer;
+    background-color: $color-surface-low-light;
+    border-radius: $radius-medium;
     margin-bottom: 1rem;
     padding: 1.5rem;
 
 }
 
-.p-datatable-thead{
-    border-bottom: 1px solid $outlineVariantLighterColor!important;
+.p-datatable-wrapper{
+    border-radius: $radius-large;
 }
+
+.p-datatable-thead{
+    border-bottom: 1px solid $color-outline-low-light!important;
+}
+
+.p-tag-info{
+    background-color: $color-info-low-light!important;
+    color: $color-info-high-light!important;
+}
+
+.p-tag-warning{
+    background-color: $color-warning-low-light!important;
+    color: $color-warning-high-light!important;
+}
+
+.p-tag-danger{
+    background-color: $color-error-low-light!important;
+    color: $color-error-high-light!important;
+}
+
+.table-column-controls{
+    border-bottom: 1px solid $color-outline-low-light!important;
+    border-top: 1px solid $color-outline-low-light!important;
+    padding:$spacing-small!important;
+}
+
+.table-column-label{
+    padding:$spacing-large $spacing-small!important;
+}
+
 
 
 

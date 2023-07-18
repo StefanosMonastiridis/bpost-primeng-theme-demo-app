@@ -1,106 +1,87 @@
 
-    <h3>Spacing scale</h3>
-    <p>The BPOST PRIME NG theme uses the native PRIMEFLEX classes to implement a spacing scale from 
-    0.25 to 2rem. The scale is implemented by different predefined class according to its use (margin, padding, gap in flex layouts, etc). Please consult PRIMEFLEX for full documentation</p>
+    <h2>Scale</h2>
+    <p>BPOST Design System uses a uniform scale with sizes from 0.25 to 3rem, represented by the following variables
+</p>
+<div class="code-snippet m-2 p-3">
+   <p><code> $scale-tiny: 0.25rem;</code></p>
+   <p><code> $scale-x-small: 0.5rem;</code></p>
+   <p><code> $scale-small: 0.75rem;</code></p>
+   <p><code> $scale-medium: 1rem;</code></p>
+   <p><code> $scale-large: 1.5rem;</code></p>
+   <p><code> $scale-x-large: 2rem;</code></p>
+   <p><code> $scale-xx-large: 2.5rem;</code></p>
+   <p><code> $scale-xxx-large: 3rem;</code></p>
+</div>
+<h2>Implementation</h2>
+<p>Scale variables are assigned to different variable sets named according to use:</p>
+<ul>
+    <li>
+        <code>spacing</code>: used for padding, margin and gaps.
+    </li>
+    <li>
+        <code>size</code>: used for width and height of components and containers.
+    </li>
+    <li>
+        <code>radius</code>: used for rounded corners of components and containers.
+    </li>
+</ul>
+<p>These variable sets are used to theme the native Prime NG components and in Figma <p-tag severity="warning" value="Full implementation of variables in Figma by end of Q3"></p-tag></p>
+<h3>Custom components</h3>
+<p>For custom component templates BPOST design system supports the following options.</p>
+<ul>
+    <li><strong> Use of our custom variable sets.</strong> The use of our variables ensures future-proof coding since it ensures that any change in scale will be immediately propagated in your custom components</li>
+    <li><strong> Use of PrimeFlex classes.</strong> Most of the used scale has an equivalent utility class in PrimeFlex.</li>
+    <li><strong>Use of Tailwind CSS utility classes. </strong><p-tag severity="warning" value="Experimental"></p-tag> With the latest update Figma translates component structures in html with reference to Tailwind CSS utility classes. Please contact the Design System team for demo and pilot implementation. Requires to install Tailwind CSS</li>
+</ul>
+
+<h2>Variables</h2>
+<h3>Spacing</h3>
 
 
 <div class="flex flex-column flex-wrap gap-4">
 
-    <div id="xx-small" class="container flex flex-column gap-2 w-12 p-4">
-<div class="flex justify-content-between">
-    <code><strong>spacing-xx-small:0.25rem</strong></code>
+    <div *ngFor="let spacingVar of spacingVars" class="container flex flex-column gap-2 w-12 p-4">
+        <div class="flex justify-content-between">
+            <p>Variable: <code><strong>${{spacingVar.name}}: {{spacingVar.value}}</strong></code></p>
+           <p>PrimeFlex classes:  <code>{{spacingVar.utilities}}</code></p> 
+        </div>
+        <div class="flex justify-content-center spacing-sample">
+            <div class="card {{spacingVar.name}} ">
+                <h1>A</h1>
+            </div>
+            <div class="card {{spacingVar.name}} ">
+                <h1>B</h1>
+            </div>
+        </div>
     
-</div>
-<div class="flex gap-1 p-1 justify-content-center spacing-sample">
-    <div class="card m-1 p-1"><h1>A</h1></div>
-    <div class="card m-1 p-1"><h1>B</h1></div>
-</div>
-<div class="flex flex-column g-1 justify-content-center p-3 code-snippet">
-   <code>&lt;div&gt; class="card m-1 p-1"&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;/div&gt;</code>
-   <code> &lt;div&gt; class="card m-1 p-1"&gt;&lt;h1&gt;B&lt;/h1&gt;&lt;/div&gt;</code>
-</div>
     </div>
 
-    <div id="x-small" class="container flex flex-column gap-2 w-12 p-4">
-        <div class="flex justify-content-between">
-            <code><strong>spacing-x-small:0.5rem</strong></code>
+    </div>
+    <h3>Sizing</h3>
+<div class="container p-4">
+    <div class="spacing-sample p-4 flex flex-column">
+        <div *ngFor="let sizingVar of sizingVars">
+           
+                <div class="sizing-sample mb-2 {{sizingVar.name}}"></div>
+                <div class="flex mb-2 gap-2">
+                    <span>Variable: <code><strong>{{sizingVar.name}}:{{sizingVar.value}}</strong></code> </span>
+                    <span>PrimeFlex classes: <code>{{sizingVar.utilities}}</code></span>
+                </div>
             
         </div>
-        <div class="flex gap-2 p-2 justify-content-center spacing-sample">
-            <div class="card m-2 p-2"><h1>A</h1></div>
-            <div class="card m-2 p-2"><h1>B</h1></div>
-        </div>
-        <div class="flex flex-column g-1 justify-content-center p-3 code-snippet">
-           <code>&lt;div&gt; class="card m-2 p-2"&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;/div&gt;</code>
-           <code> &lt;div&gt; class="card m-2 p-2"&gt;&lt;h1&gt;B&lt;/h1&gt;&lt;/div&gt;</code>
-        </div>
-            </div>
-
-    <div id="small" class="container flex flex-column gap-2 w-12 p-4">
-        <div class="flex justify-content-between">
-            <code><strong>spacing-small:0.75rem</strong></code>
+    </div>
+</div>
+<h3>Border radius</h3>
+<div class="container p-4">
+    <div class="spacing-sample p-4 flex flex-column">
+        <div *ngFor="let radiusVar of radiusVars">
+           
+                <div class="radius-sample mb-2 {{radiusVar.name}}"></div>
+                <div class="flex mb-2 justify-content-between">
+                    <span><code><strong>{{radiusVar.name}}:{{radiusVar.value}}</strong></code> </span>
+                    <span><code>{{radiusVar.utilities}}</code></span>
+                </div>
             
         </div>
-        <div class="flex gap-small padding-small justify-content-center spacing-sample">
-            <div class="card margin-small padding-small"><h1>A</h1></div>
-            <div class="card margin-small padding-small"><h1>B</h1></div>
-        </div>
-        <div class="flex flex-column g-1 justify-content-center p-3 code-snippet">
-            <code>&lt;div&gt; class="card margin-small padding-small"&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;/div&gt;</code>
-            <code> &lt;div&gt; class="card margin-small padding-small"&gt;&lt;h1&gt;B&lt;/h1&gt;&lt;/div&gt;</code>
-        </div>
-        <p-messages severity="info">
-            <ng-template pTemplate>
-                <p class="mt-3"><i class="pi pi-exclamation-circle mr-2"></i>No coresponding PrimeFlex class. <code>spacing-small</code> has to be 
-                implemented manually using the <code>$sizeS</code> variable.
-                </p>
-            </ng-template>
-        </p-messages> 
-            </div>    
-
-
-
-     <div id="medium" class="container flex flex-column gap-2 w-12 p-4">
-                <div class="flex justify-content-between">
-                    <code><strong>spacing-medium:1rem</strong></code>
-                    
-                </div>
-                <div class="flex gap-3 p-3 justify-content-center spacing-sample">
-                    <div class="card m-3 p-3"><h1>A</h1></div>
-                    <div class="card m-3 p-3"><h1>B</h1></div>
-                </div>
-                <div class="flex flex-column g-1 justify-content-center p-3 code-snippet">
-                   <code>&lt;div&gt; class="card m-3 p-3"&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;/div&gt;</code>
-                   <code> &lt;div&gt; class="card m-3 p-3"&gt;&lt;h1&gt;B&lt;/h1&gt;&lt;/div&gt;</code>
-                </div>
-                    </div>
-
-    <div id="large" class="container flex flex-column gap-2 w-12 p-4">
-        <div class="flex justify-content-between">
-            <code><strong>spacing-large:1.5rem</strong></code>
-        </div>
-        <div class="flex gap-4 p-4 justify-content-center spacing-sample">
-            <div class="card m-4 p-4"><h1>A</h1></div>
-            <div class="card m-4 p-4"><h1>B</h1></div>
-        </div>
-        <div class="flex flex-column g-1 justify-content-center p-3 code-snippet">
-            <code>&lt;div&gt; class="card m-4 p-4"&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;/div&gt;</code>
-            <code> &lt;div&gt; class="card m-4 p-4"&gt;&lt;h1&gt;B&lt;/h1&gt;&lt;/div&gt;</code>
-        </div>
-     </div>
-
-     <div id="xlarge" class="container flex flex-column gap-2 w-12 p-4">
-        <div class="flex justify-content-between">
-            <code><strong>spacing-xlarge:2rem</strong></code>
-        </div>
-        <div class="flex gap-5 p-5 justify-content-center spacing-sample">
-            <div class="card m-5 p-5"><h1>A</h1></div>
-            <div class="card m-5 p-5"><h1>B</h1></div>
-        </div>
-        <div class="flex flex-column g-1 justify-content-center p-3 code-snippet">
-            <code>&lt;div&gt; class="card m-5 p-5"&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;/div&gt;</code>
-            <code> &lt;div&gt; class="card m-5 p-5"&gt;&lt;h1&gt;B&lt;/h1&gt;&lt;/div&gt;</code>
-        </div>
-     </div>
-    
+    </div>
 </div>

@@ -1,9 +1,9 @@
 .p-message {
     margin: $messageMargin;
-    border-radius: $borderRadius;
+    border-radius: $radius-small;
 
     .p-message-wrapper {
-        padding: $messagePadding;
+        padding: $spacing-medium $spacing-x-large $spacing-medium $spacing-x-large;
     }
 
     .p-message-close {

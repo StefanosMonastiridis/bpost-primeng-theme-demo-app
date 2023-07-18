@@ -49,51 +49,62 @@
     }
 
     .p-sortable-column {
+        border-radius: $actionIconBorderRadius;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $scale-large;
+            height: $scale-large;
+            margin-left: $spacing-xx-small;
         .p-sortable-column-icon {
-            color: $tableHeaderCellIconColor;
-            margin-left: $inlineSpacing;
+            width: $scale-medium;
+            height: $scale-medium;
+            color: $color-text-secondary-light;
+           
+            transition: $actionIconTransition;
         }
 
         .p-sortable-column-badge {
-            border-radius: 50%;
-            height: $tableSortableColumnBadgeSize;
-            min-width: $tableSortableColumnBadgeSize;
-            line-height: $tableSortableColumnBadgeSize;
-            color: $highlightTextColor;
-            background: $highlightBg;
+            
+            
+            color: $color-text-secondary-light;
+           
+            background: $color-surface-low-light;
+            border-radius: $actionIconBorderRadius;
+            transition: $actionIconTransition;
             margin-left: $inlineSpacing;
         }
 
         &:not(.p-highlight):hover {
-            background: $tableHeaderCellHoverBg;
-            color: $tableHeaderCellTextHoverColor;
+            background: $color-secondary-low-light;
+            color: $color-secondary-default-light;
 
             .p-sortable-column-icon {
-                color: $tableHeaderCellIconHoverColor;
+                color: $color-secondary-default-light;
             }
         }
 
         &.p-highlight {
-            background: $tableHeaderCellHighlightBg;
+            background: $color-secondary-low-light;
             color: $tableHeaderCellHighlightTextColor;
 
             .p-sortable-column-icon {
-                color: $tableHeaderCellHighlightTextColor;
+                color: $color-secondary-default-light;
             }
 
             &:hover {
-                background: $tableHeaderCellHighlightHoverBg;
-                color: $tableHeaderCellHighlightTextColor;
+                background: $color-secondary-low-light;
+                color: $color-secondary-default-light;
 
                 .p-sortable-column-icon {
-                    color: $tableHeaderCellHighlightTextColor;
+                    color: $color-secondary-default-light;
                 }
             }
         }
 
         &:focus {
-            box-shadow: $inputListItemFocusShadow;
-            outline: 0 none;
+            background: $color-secondary-low-light;
+            color: $color-secondary-default-light;
         }
     }
 

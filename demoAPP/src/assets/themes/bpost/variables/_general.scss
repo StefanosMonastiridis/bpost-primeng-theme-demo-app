@@ -72,7 +72,7 @@ $loadingIconFontSize: 2rem;
 
 /// Color to use on an invalid element e.g. invalid input
 /// @group general
-$errorColor: #e4677e;
+$errorColor: $color-error-default-light;
 
 /// Outline color of a focused element
 /// @group general

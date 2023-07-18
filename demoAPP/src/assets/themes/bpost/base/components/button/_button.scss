@@ -3,7 +3,7 @@
     background: $buttonBg;
     border: $buttonBorder;
     padding: $buttonPadding;
-    font-size: $fontSizeButton;
+    /*font-size: $fontSizeButton;*/
    
     transition: $formElementTransition;
    
@@ -210,7 +210,7 @@
     }
 
     &.p-button-outlined {
-        background-color: transparent;
+        background-color: $color-secondary-low-light;
         color: $secondaryButtonBg;
         border: $outlinedButtonBorder;
 

@@ -3,6 +3,7 @@
     border: $toggleButtonBorder;
     color: $toggleButtonTextColor;
     transition: $formElementTransition;
+    border-radius: $toggleButtonBorderRadius;
 
     .p-button-icon-left,
     .p-button-icon-right {

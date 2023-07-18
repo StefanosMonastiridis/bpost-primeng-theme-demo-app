@@ -20,8 +20,7 @@
                 color: $tabviewHeaderTextColor;
                 padding: $tabviewHeaderPadding;
                 font-weight: $tabviewHeaderFontWeight;
-                border-top-right-radius: $borderRadius;
-                border-top-left-radius: $borderRadius;
+               
                 transition: $listItemTransition;
                 margin: $tabviewHeaderMargin;
 
@@ -30,7 +29,7 @@
                 }
 
                 &:not(.p-disabled):focus {
-                    @include focused-inset();
+                  /*  @include focused-inset();*/
                 }
             }
 

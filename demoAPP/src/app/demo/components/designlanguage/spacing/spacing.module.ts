@@ -6,6 +6,7 @@ import { MessageModule } from 'primeng/message';
 import { MessagesModule } from 'primeng/messages';
 import { ToastModule } from 'primeng/toast';
 import { RippleModule } from 'primeng/ripple';
+import { TagModule } from 'primeng/tag';
 
 
 
@@ -16,7 +17,8 @@ import { RippleModule } from 'primeng/ripple';
 		MessagesModule,
 		MessageModule,
 		RippleModule,
-		ToastModule
+		ToastModule,
+		TagModule
 		],
 	declarations: [SpacingComponent]
 })

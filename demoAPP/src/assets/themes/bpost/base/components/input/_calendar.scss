@@ -79,12 +79,12 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                 border: $calendarCellDateBorder;
 
                 &.p-highlight {
-                    color: $highlightTextColor;
-                    background: $highlightBg;
+                    color: $color-text-bright-light;
+                    background: $color-primary-default-light;
                 }
 
                 &:focus {
-                    @include focused();
+                    /* @include focused(); */
                 }
             }
 
@@ -93,6 +93,7 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                     background: $calendarCellDateTodayBg;
                     color: $calendarCellDateTodayTextColor;
                     border-color: $calendarCellDateTodayBorderColor;
+                    font-weight: 700;
 
                     &.p-highlight {
                         color: $highlightTextColor;
@@ -145,11 +146,11 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
         .p-monthpicker-month {
             padding: $calendarCellDatePadding;
             transition: $listItemTransition;
-            border-radius: $borderRadius;
+           
 
             &.p-highlight {
-                color: $highlightTextColor;
-                background: $highlightBg;
+                color: $color-text-bright-light;
+                background: $color-primary-default-light;
             }
         }
     }
@@ -160,11 +161,11 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
         .p-yearpicker-year {
             padding: $calendarCellDatePadding;
             transition: $listItemTransition;
-            border-radius: $borderRadius;
+           
 
             &.p-highlight {
-                color: $highlightTextColor;
-                background: $highlightBg;
+                color: $color-text-bright-light;
+                background: $color-primary-default-light;
             }
         }
     }
@@ -194,10 +195,11 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                 span:not(.p-highlight):not(.p-disabled) {
                     &:hover {
                         background: $calendarCellDateHoverBg;
+                        color: $calendarCellDateHoverTextColor;
                     }
 
                     &:focus {
-                        @include focused();
+                        /* @include focused(); */
                     }
                 }
             }
@@ -208,10 +210,11 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                 &:not(.p-disabled) {
                     &:not(.p-highlight):hover {
                         background: $calendarCellDateHoverBg;
+                        color: $calendarCellDateHoverTextColor;
                     }
 
                     &:focus {
-                        @include focused();
+                      /*  @include focused();*/
                     }
                 }
             }
@@ -222,11 +225,12 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                 &:not(.p-disabled) {
                     &:not(.p-highlight):hover {
                         background: $calendarCellDateHoverBg;
+                        color: $calendarCellDateHoverTextColor;
                     }
 
-                    &:focus {
+                   /* &:focus {
                         @include focused();
-                    }
+                    }*/
                 }
             }
         }

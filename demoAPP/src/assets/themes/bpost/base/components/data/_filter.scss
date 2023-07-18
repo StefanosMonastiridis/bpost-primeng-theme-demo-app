@@ -6,35 +6,39 @@
 }
 
 .p-column-filter-menu-button {
-    width: $actionIconWidth;
-    height: $actionIconHeight;
-    color: $actionIconColor;
-    border: $actionIconBorder;
-    background: $actionIconBg;
+    width: $scale-large;
+    height: $scale-large;
+    color: $color-text-secondary-light;
+   
+    background: $color-surface-low-light;
     border-radius: $actionIconBorderRadius;
     transition: $actionIconTransition;
+    span{
+        width: $scale-medium;
+    height: $scale-medium; 
+   
+    }
+    
 
     &:hover {
-        color: $actionIconHoverColor;
-        border-color: $actionIconHoverBorderColor;
-        background: $actionIconHoverBg;
+        color: $color-secondary-high-light;
+        
+        background: $color-secondary-low-light;
     }
 
     &.p-column-filter-menu-button-open,
     &.p-column-filter-menu-button-open:hover {
-        background: $actionIconHoverBg;
-        color: $actionIconHoverColor;
+        background: $color-secondary-low-light;
+        color: $color-secondary-high-light;
     }
 
     &.p-column-filter-menu-button-active,
     &.p-column-filter-menu-button-active:hover {
-        background: $highlightBg;
-        color: $highlightTextColor;
+        background: $color-secondary-low-light;
+        color: $color-secondary-high-light;
     }
 
-    &:focus {
-        @include focused();
-    }
+ 
 
 }
 

@@ -9,157 +9,280 @@ $gutter: 1rem; //for primeflex grid system
 @import "../node_modules/primeflex/primeflex.scss";
 @import "../node_modules/primeicons/primeicons.css";
 
-
 /* Demos */
 @import "assets/demo/styles/flags/flags.css";
 @import "assets/demo/styles/badges.scss";
 @import "assets/demo/styles/code.scss";
 
-.color-sample{
-  
-    margin-top:1rem;
-    width: 24rem;
-    padding: 0.5rem;
+.color-sample {
+  margin-top: 1rem;
+  width: 24rem;
+  padding: 0.5rem;
 }
-.spacing-sample{
-    background-color: $surfaceContainerLowColor;
+.spacing-sample {
+  background-color: $color-surface-high-light;
 }
-.typo-sample{
-   
-    padding: 0.5rem;
+.typo-sample {
+  padding: 0.5rem;
 }
 
-.code-snippet{
-    background-color: $surfaceContainerInverseColor;
-    color:white;
+.code-snippet {
+  background-color: $color-surface-inverse-light;
+  color: white;
 }
 
-
-.primary-sample{
-    background-color: $primaryColor;
-    color: white;
+.color-primary-default-light {
+  background-color: $primaryColor;
+  color: white;
 }
-.primaryContainer-sample{
-    background-color: $primaryContainerColor;
-    color: $onPrimaryContainerColor;
-    border-color: $onPrimaryContainerColor;
-    border-width: 1px;
-    border-style: solid;
-}
-
-.secondary-sample{
-    background-color: $secondaryColor;
-    color: white;
+.color-primary-low-light {
+  background-color: $color-primary-low-light;
+  color: $color-primary-higher-light;
+  border-color: $color-primary-higher-light;
+  border-width: 2px;
+  border-style: solid;
 }
 
-.secondaryContainer-sample{
-    background-color: $secondaryContainerColor;
-    color: $onSecondaryContainerColor;
-    border-color: $secondaryBorderColor;
-    border-width: 1px;
-    border-style: solid;
+.color-primary-high-light {
+  background-color: $color-primary-high-light;
+  color: $color-text-bright-light;
+  border-color: $color-primary-low-light;
 }
 
-
-.info-sample{
-    background-color: $infoColor;
-    color: white;
+.color-secondary-default-light {
+  background-color: $color-secondary-default-light;
+  color: white;
 }
 
-.infoContainer-sample{
-    background-color: $infoContainerColor;
-    color: $onInfoContainerColor;
-    border-color: $onInfoContainerColor;
-    border-width: 1px;
-    border-style: solid;
+.color-secondary-low-light {
+  background-color: $color-secondary-low-light;
+  color: $color-secondary-default-light;
+  border-color: $color-secondary-default-light;
+  border-width: 2px;
+  border-style: solid;
 }
 
-.validation-sample{
-    background-color: $validationColor;
-    color: white;
+.color-secondary-high-light {
+  background-color: $color-secondary-high-light;
+  color: white;
 }
 
-.validationContainer-sample{
-    background-color: $validationContainerColor;
-    color: $onValidationContainerColor;
-    border-color: $validationBorderColor;
-    border-width: 1px;
-    border-style: solid;
+.color-info-default-light {
+  background-color: $color-info-default-light;
+  color: white;
 }
 
-.warning-sample{
-    background-color: $warningColor;
-    color: white;
+.color-info-low-light {
+  background-color: $color-info-low-light;
+  color: $color-info-default-light;
+  border-color: $color-info-default-light;
+  border-width: 2px;
+  border-style: solid;
 }
 
-.warningContainer-sample{
-    background-color: $warningContainerColor;
-    color: $onWarningContainerColor;
-    border-color: $warningBorderColor;
-    border-width: 1px;
-    border-style: solid;
+.color-info-default-light {
+  background-color: $color-info-default-light;
+  color: $color-text-bright-light;
 }
 
-.error-sample{
-    background-color: $errorColor;
-    color: white;
+.color-info-high-light {
+  background-color: $color-info-high-light;
+  color: $color-text-bright-light;
 }
 
-.errorContainer-sample{
-    background-color: $errorContainerColor;
-    color: $onErrorContainerColor;
-    border-color: $errorBorderColor;
-    border-width: 1px;
-    border-style: solid;
+.color-validation-default-light {
+  background-color: $color-validation-default-light;
+  color: white;
 }
 
-.surfaceColor-sample{
-    background-color: $surfaceColor;
-  
+.color-validation-high-light {
+  background-color: $color-validation-high-light;
+  color: white;
 }
 
-.surfaceDimColor-sample{
-    background-color: $surfaceDimColor;
-    color: $onSurfaceColor;
+.color-validation-low-light {
+  background-color: $color-validation-low-light;
+  color: $color-validation-default-light;
+  border-color: $color-validation-default-light;
+  border-width: 2px;
+  border-style: solid;
 }
 
-.surfaceInverseColor-sample{
-    background-color: $surfaceContainerInverseColor;
-    color: white;
+.color-warning-default-light {
+  background-color: $color-warning-default-light;
+  color: white;
 }
 
-.onSurfaceInverseColor{
-    color: $onInverseContainerColor;
-    
+.color-warning-low-light {
+  background-color: $color-warning-low-light;
+  color: $color-warning-higher-light;
+  border-color: $color-warning-higher-light;
+  border-width: 1px;
+  border-style: solid;
 }
 
-.surfaceLowestColor-sample{
-    background-color: $surfaceContainerLowestColor;
-   
+.color-error-default-light {
+  background-color: $color-error-default-light;
+  color: white;
 }
 
-.surfaceHighColor-sample{
-    background-color: $surfaceContainerHighColor;
-    color: $onSurfaceColor;
+.color-error-high-light {
+  background-color: $color-error-high-light;
+  color: white;
 }
 
-.surfaceHighestColor-sample{
-    background-color: $surfaceContainerHighestColor;
-    color: $onSurfaceColor;
+.color-warning-high-light {
+  background-color: $color-warning-high-light;
+  color: white;
 }
 
-.outlineColor-sample{
-    border: 0.2rem solid $outlineColor;
-    height: 10rem;
+.color-error-low-light {
+  background-color: $color-error-low-light;
+  color: $color-error-higher-light;
+  border-color: $color-error-higher-light;
+  border-width: 1px;
+  border-style: solid;
 }
 
-.outlineVariantColor-sample{
-    border: 0.2rem solid $outlineVariantColor;
-    height: 10rem;
+.color-surface-lowest-light {
+  background-color: $color-surface-lowest-light;
 }
 
-.outlineVariantLighterColor-sample{
-    border: 0.2rem solid $outlineVariantLighterColor;
-    height: 10rem;
+.color-surface-high-light {
+  background-color: $color-surface-high-light;
+  color: $color-text-primary-light;
 }
 
+.color-surface-higher-light {
+  background-color: $color-surface-higher-light;
+  color: $color-text-primary-light;
+}
+
+.color-surface-highest-light {
+  background-color: $color-surface-highest-light;
+  color: $color-text-primary-inverse-light;
+}
+
+.color-surface-inverse-light {
+  background-color: $color-surface-inverse-light;
+  color: $color-text-primary-inverse-light;
+}
+
+.color-text-secondary-light {
+  color: $color-text-secondary-light;
+}
+.color-text-secondary-inverse-light {
+  color: $color-text-secondary-inverse-light;
+}
+
+.color-text-disabled-light {
+  color: $color-text-disabled-light;
+}
+
+.color-outline-low-light {
+  border-color: $color-outline-low-light;
+  border-style: solid;
+  border-width: 2px;
+  height: 80px;
+}
+
+.color-outline-default-light {
+  border-color: $color-outline-default-light;
+  border-style: solid;
+  border-width: 2px;
+  height: 80px;
+}
+
+.color-outline-high-light {
+  border-color: $color-outline-high-light;
+  border-style: solid;
+  border-width: 2px;
+  height: 80px;
+}
+
+.spacing-xx-small {
+  padding: $spacing-xx-small;
+  margin: $spacing-xx-small;
+  gap: $spacing-xx-small;
+}
+
+.spacing-x-small {
+  padding: $spacing-x-small;
+  margin: $spacing-x-small;
+  gap: $spacing-x-small;
+}
+.spacing-small {
+  padding: $spacing-small;
+  margin: $spacing-small;
+  gap: $spacing-small;
+}
+
+.spacing-medium {
+  padding: $spacing-medium;
+  margin: $spacing-medium;
+  gap: $spacing-medium;
+}
+
+.spacing-large {
+  padding: $spacing-large;
+  margin: $spacing-large;
+  gap: $spacing-large;
+}
+
+.spacing-x-large {
+  padding: $spacing-x-large;
+  margin: $spacing-x-large;
+  gap: $spacing-x-large;
+}
+
+.sizing-sample {
+  background-color: $color-secondary-default-light;
+}
+
+.size-x-small {
+  width: $size-x-small;
+  height: $size-x-small;
+}
+
+.size-small {
+  width: $size-small;
+  height: $size-small;
+}
+
+.size-medium {
+  width: $size-medium;
+  height: $size-medium;
+}
+
+.size-large {
+  width: $size-large;
+  height: $size-large;
+}
+
+.size-x-large {
+  width: $size-x-large;
+  height: $size-x-large;
+}
+
+.size-xx-large {
+    width: $size-xx-large;
+    height: $size-xx-large;
+  }
+
+  .radius-small{
+    border-radius: $radius-small;
+  }
+
+  .radius-medium{
+    border-radius: $radius-medium;
+  }
+
+  .radius-large{
+    border-radius: $radius-large;
+  }
+
+.radius-sample{
+   background-color: $color-secondary-default-light;
+   width: 100%;
+   height: 6rem;
+}
