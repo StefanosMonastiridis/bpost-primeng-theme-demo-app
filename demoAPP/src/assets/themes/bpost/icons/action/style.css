@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'bposticons';
+  font-family: 'bposticons',sans-serif;
   src:  url('fonts/bposticons.eot?wyl2b6');
   src:  url('fonts/bposticons.eot?wyl2b6#iefix') format('embedded-opentype'),
     url('fonts/bposticons.ttf?wyl2b6') format('truetype'),
