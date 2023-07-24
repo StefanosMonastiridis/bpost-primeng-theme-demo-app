@@ -22,7 +22,7 @@
         <p>In order to use the BPost Theme in new projects, follow these steps</p>
         <ul>
             <li>
-                Start a new Angular project, by running the following commands.
+                Start a new Angular project, by running the following commands. During installation, for style sheets select SCSS as a format.
                 <div class="code-snippet m-2 p-2">
                   <p><code>ng new bpost-project</code> </p> 
                    <p><code>cd bpost-project</code></p>
@@ -38,8 +38,15 @@
                   <code>npm install primeng</code>  
                 </div>
             </li>
+            <li>You are also going to need PrimeFlex utilities and PrimeIcons </li>
+            <div class="code-snippet m-2 p-2">
+                <code>npm install primeflex</code>  
+              </div>
+              <div class="code-snippet m-2 p-2">
+                <code>npm install npm install primeicons --save</code>  
+              </div>
             <li>
-                Once PrimeNG is installed, you will have to copy the <strong>BPOST theme files</strong> and <strong>theme-base</strong> files from the demo app to the new project. You can locate the files in the assets folder. 
+                Once PrimeNG is installed, you will have to copy the <strong>BPOST theme files</strong> from the demo app to the new project. You can locate the files in the assets folder.
             </li>
             <li>
                 Finally you have to link the theme to your new application, along with the neccesary icon and utility files. Copy and paste the following in the styles.scss of your new project:
