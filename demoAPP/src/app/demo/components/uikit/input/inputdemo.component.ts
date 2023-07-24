@@ -61,7 +61,10 @@ export class InputDemoComponent implements OnInit {
         this.paymentOptions = [
             { name: 'Option 1', value: 1 },
             { name: 'Option 2', value: 2 },
-            { name: 'Option 3', value: 3 }
+            { name: 'Option 3', value: 3 },
+            { name: 'Option 4', value: 4 },
+            { name: 'Option 5', value: 5 },
+            { name: 'Option 6', value: 6 }
         ];
     }
 

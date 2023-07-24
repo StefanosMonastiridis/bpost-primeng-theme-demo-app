@@ -315,7 +315,7 @@ brandIconsOther=[
         { name:'insight', src:'assets/themes/bpost/icons/brand/other/insight.svg'},
         { name:'justice', src:'assets/themes/bpost/icons/brand/other/justice.svg'},
         { name:'language', src:'assets/themes/bpost/icons/brand/other/language.svg'},
-        { name:'light-1', src:'assets/themes/bpost/icons/brand/other/light-1.svgv'},
+        { name:'light-1', src:'assets/themes/bpost/icons/brand/other/light-1.svg'},
         { name:'light-2', src:'assets/themes/bpost/icons/brand/other/light-2.svg'},
         { name:'logOut', src:'assets/themes/bpost/icons/brand/other/logOut.svg'},
         { name:'marCom', src:'assets/themes/bpost/icons/brand/other/marCom.svg'},
