@@ -1,6 +1,6 @@
 # Changelog
 
-## 15.0.0
+## 15.0.0.0
 **Migration Guide**
 - Upgrade to PrimeNG 15
 - Upgrade to Angular 15
