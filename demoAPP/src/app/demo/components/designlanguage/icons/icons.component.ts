@@ -11,7 +11,54 @@ import { IconService } from 'src/app/demo/service/icon.service';
 
 export class IconsComponent implements OnInit {
    
-
+    actionIcons=[
+        { name:'bpost-alert', altText:'Warning!'},
+        { name:'bpost-bin', altText:'Delete!'},
+        { name:'bpost-bookmark-filled', altText:'Bookmarked'},
+        { name:'bpost-bookmark-outline', altText:'Bookmark'},
+        { name:'bpost-calendar', altText:'Open the calendar'},
+        { name:'bpost-cart', altText:'Add to basket'},
+        { name:'bpost-chat', altText:'Send message'},
+        { name:'bpost-checkmark', altText:'Included:'},
+        { name:'bpost-chevron-circle-right', altText:'Go to page'},
+        { name:'bpost-chevron-down', altText:'Expand item'},
+        { name:'bpost-chevron-left', altText:'Navigate back'},
+        { name:'bpost-chevron-right', altText:'Navigate forward'},
+        { name:'bpost-chevron-up', altText:'Collapse item'},
+        { name:'bpost-close', altText:'Close'},
+        { name:'bpost-cog', altText:'Configure'},
+        { name:'bpost-compare', altText:'Compare'},
+        { name:'bpost-copy', altText:'Copy'},
+        { name:'bpost-crop', altText:'Crop'},
+        { name:'bpost-download', altText:'Download'},
+        { name:'bpost-edit', altText:'Edit'},
+        { name:'bpost-expand', altText:'Maximize'},
+        { name:'bpost-external', altText:'External'},
+        { name:'bpost-faceid', altText:'Use face recognition'},
+        { name:'bpost-filter-1', altText:'Open filter settings'},
+        { name:'bpost-fingerprint', altText:'Use fingerprint recognition'},
+        { name:'bpost-hide', altText:'Hide your input'},
+        { name:'bpost-info', altText:'This is important information'},
+        { name:'bpost-map-center', altText:'Center the map to my location'},
+        { name:'bpost-minus', altText:'Reduce'},
+        { name:'bpost-menu-contextual', altText:'Open more options'},
+        { name:'bpost-menu-search', altText:'Search'},
+        { name:'bpost-menu', altText:'Open application menu'},
+        { name:'bpost-mix', altText:'Open settings'},
+        { name:'bpost-notification', altText:'Your notifications'},
+        { name:'bpost-pause', altText:'Pause'},
+        { name:'bpost-photo', altText:'Open camera'},
+        { name:'bpost-plus', altText:'Add'},
+        { name:'bpost-qr-code', altText:'Scan QR code'},
+        { name:'bpost-scan', altText:'Open camera to scan barcode'},
+        { name:'bpost-search', altText:'Search'},
+        { name:'bpost-share', altText:'Share on social media'},
+        { name:'bpost-thumb-up', altText:'Give a possitive rating'},
+        { name:'bpost-thumb-down', altText:'Give a negative rating'},
+        { name:'bpost-tooltip', altText:'Access additional information about this'},
+        { name:'bpost-upload', altText:'Select file to import'},
+        { name:'bpost-view', altText:'Show your input'}
+    ];
 
 
 

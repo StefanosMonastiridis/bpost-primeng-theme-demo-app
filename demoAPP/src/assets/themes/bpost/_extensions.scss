@@ -321,6 +321,16 @@ margin-right: $spacing-large!important;
     padding:$spacing-large $spacing-small!important;
 }
 
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
 
 
 
