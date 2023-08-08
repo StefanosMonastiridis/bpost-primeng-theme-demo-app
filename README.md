@@ -15,30 +15,35 @@ This project will be updating in regular basis. Clone the repo instead of downlo
 
 ## Using the BPOST theme in other projects
 
-In order to use the bpost theme in other projects, you will have to copy and paste bpost folders and link the styles in styles scss. 
+In order to use the bpost theme in other projects, you will have to copy and paste the bpost theme folder and link the main theme stylesheet in styles.scss of your app:
+`@import "assets/themes/bpost/theme.scss";`
 
+## PrimeNG and PrimeFlex style dependencies
 
-## Development server
+Additionanlly you will have to link the PrimeNG and PrimeFlex stylesheets:
+```
+@import "~primeng/resources/primeng.min.css";
+@import "./node_modules/primeflex/primeflex.scss";
+@import "~primeicons/primeicons.css";
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## What does the theme offer
 
-## Code scaffolding
+- SCSS variables for colors, spacing, sizing and border radii
+- Styles for native PrimeNG components
+- BPOST icons
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Developing custom components
+- When deveveloping custom components use the provided variables instead of raw values. This will ensure that any changes in the BPOST Design System will be propagated in your components.
+- For spacing and sizing outside of the supported scale, use **relative** units instead of absolute ones, to ensure that you develop responsive and accessible interfaces.  When developing custom components the Design System team can help you in the conversion from absolute ones. Related resources:
+    - https://www.freecodecamp.org/news/absolute-and-relative-css-units/
+    - https://joseewouters.nl/blog/the-magic-of-relative-units/
+    - https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#resize-text
 
-## Build
+## Bug reports and requests
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
+You can report bugs or request theme extensions in the following ways:
+- Post in the [Design System MS Teams channel](https://teams.microsoft.com/l/team/19%3abONqqlg_PCZWnebQDw-qJfLwG6AqRBtaUEaMsXriBt41%40thread.tacv2/conversations?groupId=a0ed4017-c709-4c89-8778-d263274fbca9&tenantId=1183410f-6cf0-4d82-976e-994c1ce4cfce)
+- Write at stefanos.monastiridis.ext@bpost.be
+- Create a bug in your Jira environment and assign it to Stefanos Monastiridis
+   
