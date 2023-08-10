@@ -52,7 +52,8 @@
 
 			<h5>Calendar</h5>
 			<p-calendar [showIcon]="true" inputId="icon" dateFormat="dd.mm.yy"></p-calendar>
-
+			<h5>Time</h5>
+			<p-calendar [showIcon]="true" icon="pi pi-clock" [timeOnly]="true" inputId="icon" dateFormat="dd.mm.yy"></p-calendar>
 			<h5>InputNumber</h5>
 			<p-inputNumber mode="decimal" [showButtons]="true" [min]="0" [max]="100">
 			</p-inputNumber>
@@ -140,6 +141,7 @@
 			<p-listbox [options]="cities" [(ngModel)]="selectedList" [filter]="true"></p-listbox>
 
 			<h5>Dropdown</h5>
+			Test
 			<p-dropdown [options]="cities" [(ngModel)]="selectedDrop" placeholder="Select a City" [showClear]="true"></p-dropdown>
 
 			<h5>Multiselect</h5>

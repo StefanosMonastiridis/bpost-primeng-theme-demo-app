@@ -493,24 +493,24 @@ $colorPickerBorder:none!default;
 $colorPickerHandleColor:$color-surface-low-light!default;
 
 //togglebutton
-$toggleButtonBg:$color-surface-higher-light !default;
-$toggleButtonBorder:4px solid $color-surface-higher-light !default;
+$toggleButtonBg:$color-surface-low-light !default;
+$toggleButtonBorder:1px solid $color-outline-default-light !default;
 $toggleButtonTextColor:$color-text-primary-light
  !default;
 $toggleButtonIconColor:$color-text-primary-light
 !default;
 $toggleButtonHoverBg:$color-surface-low-light !default;
-$toggleButtonHoverBorderColor:$color-surface-higher-light !default;
-$toggleButtonTextHoverColor:$color-text-primary-light !default;
+$toggleButtonHoverBorderColor:$color-primary-default-light !default;
+$toggleButtonTextHoverColor:$color-primary-default-light !default;
 $toggleButtonIconHoverColor:$color-text-primary-light !default;
 $toggleButtonActiveBg:$color-surface-low-light !default;
-$toggleButtonActiveBorderColor:$color-surface-higher-light !default;
-$toggleButtonTextActiveColor:$color-text-primary-light  !default;
-$toggleButtonIconActiveColor:$color-text-primary-light  !default;
+$toggleButtonActiveBorderColor:$color-primary-default-light !default;
+$toggleButtonTextActiveColor:$color-primary-default-light  !default;
+$toggleButtonIconActiveColor:$color-primary-default-light  !default;
 $toggleButtonActiveHoverBg:$color-surface-low-light !default;
-$toggleButtonActiveHoverBorderColor:$color-surface-higher-light !default;
-$toggleButtonTextActiveHoverColor:$color-text-primary-light !default;
-$toggleButtonIconActiveHoverColor:$color-text-primary-light!default;
+$toggleButtonActiveHoverBorderColor:$color-primary-default-light !default;
+$toggleButtonTextActiveHoverColor:$color-primary-default-light !default;
+$toggleButtonIconActiveHoverColor:$color-primary-default-light!default;
 $toggleButtonBorderRadius: $radius-small;
 
 //inplace
@@ -597,8 +597,8 @@ $inputSwitchHandleOnBg:$primaryTextColor !default;
 $panelHeaderBorderColor:$color-outline-low-light !default;
 $panelHeaderBorder:1px solid $color-outline-low-light !default;
 $panelHeaderBg:$color-surface-high-light !default;
-$panelHeaderTextColor:$color-text-secondary-light !default;
-$panelHeaderFontWeight:700 !default;
+$panelHeaderTextColor:$color-text-primary-light !default;
+$panelHeaderFontWeight:500 !default;
 $panelHeaderPadding:1.25rem !default;
 $panelToggleableHeaderPadding:.75rem 1.25rem !default;
 
@@ -628,17 +628,17 @@ $accordionHeaderTextColor:$panelHeaderTextColor !default;
 $accordionHeaderFontWeight:$panelHeaderFontWeight !default;
 $accordionHeaderPadding:$panelHeaderPadding !default;
 
-$accordionHeaderHoverBg:$color-primary-low-light !default;
+$accordionHeaderHoverBg:$color-surface-high-light !default;
 $accordionHeaderHoverBorderColor:$primaryColor !default;
-$accordionHeaderTextHoverColor:$color-primary-higher-light!default;
+$accordionHeaderTextHoverColor:$color-primary-default-light!default;
 
 $accordionHeaderActiveBg:none!default;
 $accordionHeaderActiveBorderColor:none !default;
 $accordionHeaderTextActiveColor:$primaryColor !default;
 
-$accordionHeaderActiveHoverBg:$color-primary-low-light !default;
+$accordionHeaderActiveHoverBg:$color-surface-high-light  !default;
 $accordionHeaderActiveHoverBorderColor:none !default;
-$accordionHeaderTextActiveHoverColor:$color-primary-higher-light !default;
+$accordionHeaderTextActiveHoverColor:$color-primary-default-light !default;
 
 $accordionContentBorder:$color-outline-low-light !default;
 $accordionContentBg:$panelContentBg !default;
@@ -659,11 +659,11 @@ $tabviewHeaderTextColor:$color-text-primary-light
  !default;
 $tabviewHeaderFontWeight:$panelHeaderFontWeight !default;
 $tabviewHeaderPadding:$panelHeaderPadding !default;
-$tabviewHeaderMargin:0 0 -2px 0 !default;
+$tabviewHeaderMargin:0!default;
 
-$tabviewHeaderHoverBg:$color-surface-low-light !default;
+$tabviewHeaderHoverBg:$color-surface-high-light !default;
 $tabviewHeaderHoverBorderColor:$color-outline-default-light !default;
-$tabviewHeaderTextHoverColor:$color-text-primary-light
+$tabviewHeaderTextHoverColor:$color-primary-default-light
  !default;
 
 $tabviewHeaderActiveBg:$color-surface-low-light !default;

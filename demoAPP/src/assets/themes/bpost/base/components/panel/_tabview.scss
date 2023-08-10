@@ -3,6 +3,7 @@
         background: $tabviewNavBg;
         border: $tabviewNavBorder;
         border-width: $tabviewNavBorderWidth;
+        font-size: 1.125rem;
 
         li {
             margin-right: $tabviewHeaderSpacing;
@@ -21,7 +22,7 @@
                 margin: $tabviewHeaderMargin;
 
                 &:not(.p-disabled):focus {
-                    @include focused-inset();
+                   /* @include focused-inset();*/
                 }
             }
 

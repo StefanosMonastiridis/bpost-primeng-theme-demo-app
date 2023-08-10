@@ -3,6 +3,7 @@
         background: $tabviewNavBg;
         border: $tabviewNavBorder;
         border-width: $tabviewNavBorderWidth;
+        height: 100%;
         
 
         .p-menuitem-badge {
@@ -20,9 +21,9 @@
                 color: $tabviewHeaderTextColor;
                 padding: $tabviewHeaderPadding;
                 font-weight: $tabviewHeaderFontWeight;
-               
+               font-size: 1.125rem;
                 transition: $listItemTransition;
-                margin: $tabviewHeaderMargin;
+                
 
                 .p-menuitem-icon {
                     margin-right: $inlineSpacing;
