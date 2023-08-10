@@ -8,6 +8,7 @@
             font-weight: $accordionHeaderFontWeight;
             border-radius: $borderRadius;
             transition: $listItemTransition;
+            font-size: 1.125rem;
 
             .p-accordion-toggle-icon {
                 margin-right: $inlineSpacing;
@@ -17,7 +18,7 @@
         &:not(.p-disabled) {
             .p-accordion-header-link {
                 &:focus {
-                    @include focused();
+                   /* @include focused();*/
                 }
             }
         }

@@ -29,18 +29,19 @@ a {
 }
 
 .p-togglebutton.p-button {
-    padding: 4px 8px!important;
-    font-size: $size-small !important;
+    padding: $spacing-x-small!important;
+    font-size: $size-medium !important;
     font-weight: 500 !important;
-    line-height: 20px !important;
+    line-height: 24px !important;
     
 }
 .p-selectbutton{
     .p-button{
-        padding: 4px 8px!important;
-        font-size: $size-small !important;
+        padding: $spacing-x-small!important;
+        font-size: $size-medium !important;
         font-weight: 500 !important;
-        line-height: 20px !important;
+        line-height: 24px !important;
+        
     }
 }
 
@@ -128,8 +129,8 @@ a {
             &.p-datepicker-today {
                 > span {
                     &.p-highlight {
-                        color: $primaryTextColor;
-                        background: rgba(255,255,255,.3);
+                        color: $color-text-primary-light;
+                        background: $color-surface-low-light;
                     }
                 }
             }
@@ -172,7 +173,8 @@ margin-right: $spacing-large!important;
     background-color: $color-surface-low-light!important;
     color: $color-primary-default-light!important;
     border-color: $color-outline-default-light!important;
-    border-width: 1px 1px 1px 0px!important;
+    border-width: 1px!important;
+    margin-left: -1px!important;
     &:hover{
         border-color: $color-outline-high-light!important;
     }
@@ -190,19 +192,22 @@ margin-right: $spacing-large!important;
     }
 }
 
-.p-inputnumber-button-up{
-    border-color: $color-outline-default-light!important;
-    border-width: 1px 1px 0px 0px!important;
-}
 
-.p-inputnumber-button-down{
+.p-inputnumber-button-group{
+    border:1px;
     border-color: $color-outline-default-light!important;
-    border-width: 0px 1px 1px 0px!important;
+    border-bottom-right-radius: $borderRadiusInput!important;
+    border-top-right-radius: $borderRadiusInput!important;
+    border-style: solid;
+    margin-left: -1px;
+    &:hover{
+        border-color: $color-outline-high-light!important;
+    }
 }
 
 .p-calendar, .p-autocomplete, .p-inputnumber{
     .p-inputtext{
-        border-width: 1px 0px 1px 1px!important;
+        border-width: 1px!important;
     }
 }
 
@@ -330,6 +335,7 @@ margin-right: $spacing-large!important;
     white-space: nowrap;
     width: 1px;
   }
+
 
 
 

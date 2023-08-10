@@ -4,6 +4,7 @@
     color: $toggleButtonTextColor;
     transition: $formElementTransition;
     border-radius: $toggleButtonBorderRadius;
+    margin-right: $spacing-medium;
 
     .p-button-icon-left,
     .p-button-icon-right {
