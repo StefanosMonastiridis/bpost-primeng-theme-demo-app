@@ -376,9 +376,9 @@ $buttonBorder:1px solid $primaryColor !default;
 $buttonHoverBg:$primaryDarkColor !default;
 $buttonTextHoverColor:$primaryTextColor !default;
 $buttonHoverBorderColor:$primaryDarkColor !default;
-$buttonActiveBg:$primaryDarkerColor !default;
+$buttonActiveBg:$primaryDarkColor !default;
 $buttonTextActiveColor:$primaryTextColor !default;
-$buttonActiveBorderColor:$primaryDarkerColor !default;
+$buttonActiveBorderColor:$primaryDarkColor !default;
 $raisedButtonShadow:0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !default;
 $roundedButtonBorderRadius:2rem !default;
 $borderRadiusButton: $radius-small !default;
@@ -456,8 +456,8 @@ $dangerButtonTextActiveColor:$dangerButtonTextColor !default;
 $dangerButtonActiveBorderColor:scale-color($dangerButtonBg, $lightness: -20%) !default;
 $dangerButtonFocusShadow:0 0 0 0.2rem scale-color($dangerButtonBg, $lightness: 60%) !default;
 
-$linkButtonColor:$primaryDarkerColor !default;
-$linkButtonHoverColor:$primaryDarkerColor !default;
+$linkButtonColor:$color-primary-high-light !default;
+$linkButtonHoverColor:$color-primary-high-light!default;
 $linkButtonTextHoverDecoration:underline !default;
 $linkButtonFocusShadow:0 0 0 0.2rem $focusOutlineColor !default;
 
@@ -469,9 +469,9 @@ $checkboxIconFontSize:14px !default;
 $checkboxActiveBorderColor:$primaryColor !default;
 $checkboxActiveBg:$primaryColor !default;
 $checkboxIconActiveColor:$primaryTextColor !default;
-$checkboxActiveHoverBg:$primaryDarkerColor !default;
+$checkboxActiveHoverBg:$color-primary-high-light !default;
 $checkboxIconActiveHoverColor:$primaryTextColor !default;
-$checkboxActiveHoverBorderColor:$primaryDarkerColor !default;
+$checkboxActiveHoverBorderColor:$color-primary-high-light!default;
 
 //radiobutton
 $radiobuttonWidth:$size-large !default;

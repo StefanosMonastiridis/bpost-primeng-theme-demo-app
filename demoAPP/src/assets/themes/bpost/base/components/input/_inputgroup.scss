@@ -1,4 +1,4 @@
-.p-inputgroup-addon {
+.p-inputgroup-addon{
     background: $inputGroupBg;
     color: $inputGroupTextColor;
     border-top: $inputBorder;
@@ -10,6 +10,7 @@
     &:last-child {
         border-right: $inputBorder;
     }
+    
 }
 
 .p-inputgroup {

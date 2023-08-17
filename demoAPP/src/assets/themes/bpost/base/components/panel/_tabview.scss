@@ -21,9 +21,9 @@
                 transition: $listItemTransition;
                 margin: $tabviewHeaderMargin;
 
-                &:not(.p-disabled):focus {
-                   /* @include focused-inset();*/
-                }
+              /*  &:not(.p-disabled):focus {
+                    @include focused-inset();
+                }*/
             }
 
             &:not(.p-highlight):not(.p-disabled):hover {

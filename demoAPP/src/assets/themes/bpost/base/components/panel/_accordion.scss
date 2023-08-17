@@ -15,13 +15,13 @@
             }
         }
 
-        &:not(.p-disabled) {
+       /* &:not(.p-disabled) {
             .p-accordion-header-link {
                 &:focus {
-                   /* @include focused();*/
+                    @include focused()
                 }
             }
-        }
+        };*/
 
         &:not(.p-highlight):not(.p-disabled):hover {
             .p-accordion-header-link {
