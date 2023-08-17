@@ -83,9 +83,9 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                     background: $color-primary-default-light;
                 }
 
-                &:focus {
-                    /* @include focused(); */
-                }
+                /*  &:focus {
+                   @include focused(); 
+                }*/
             }
 
             &.p-datepicker-today {
@@ -200,9 +200,9 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                         color: $calendarCellDateHoverTextColor;
                     }
 
-                    &:focus {
-                        /* @include focused(); */
-                    }
+                  /*   &:focus {
+                        @include focused(); 
+                    }*/
                 }
             }
         }
@@ -215,9 +215,9 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
                         color: $calendarCellDateHoverTextColor;
                     }
 
-                    &:focus {
-                      /*  @include focused();*/
-                    }
+                  /* &:focus {
+                        @include focused();
+                    }*/
                 }
             }
         }

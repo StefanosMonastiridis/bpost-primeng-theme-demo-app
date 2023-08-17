@@ -41,7 +41,15 @@ a {
         font-size: $size-medium !important;
         font-weight: 500 !important;
         line-height: 24px !important;
-        
+        border-width: 2px!important;
+        border-style: solid!important;
+        border-color: $color-outline-default-light!important;
+       &:hover{
+        border-color: $color-primary-default-light!important;
+       }
+    }
+    .p-highlight{
+        border-color: $color-primary-default-light!important;
     }
 }
 
@@ -262,7 +270,9 @@ margin-right: $spacing-large!important;
     .pi::before{
         color: $primaryColor;
     }
+
 }
+
 
 
 
