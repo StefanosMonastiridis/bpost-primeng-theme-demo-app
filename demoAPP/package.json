@@ -1,6 +1,7 @@
 {
-  "name": "bpost-primeng-demo",
+  "name": "bpost-primeng-theme-demo-app",
   "version": "1.0.0",
+
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -82,4 +83,18 @@
     "url": "https://bitbucket.org/bpost_deliveryparcelsint/web-design-system-demo/issues"
   },
   "homepage": "https://bitbucket.org/bpost_deliveryparcelsint/web-design-system-demo#readme"
+=======
+  "description": "A demo Angular app using PrimeNG components, themed for BPOST applications",
+  "main": "src/main.ts",
+  "scripts": {},
+  "keywords": ["angular", "primeng", "demo", "bpost", "design system"],
+  "peerDependencies": {
+    
+    "@angular/common": "^15.2.9",
+    "@angular/core": "^15.2.9",
+    "primeng": "^15.0.0", 
+    "primeicons": "^6.0.1",
+    "primeflex": "^3.3.1"
+  }
+
 }
