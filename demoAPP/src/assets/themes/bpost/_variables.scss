@@ -227,7 +227,7 @@ $color-icons-red-dark: $palettes-primary-red-40;
 //scale
 
 
-$scale-tiny: 0.25rem;
+$scale-xx-small: 0.25rem;
 $scale-x-small: 0.5rem;
 $scale-small: 0.75rem;
 $scale-medium: 1rem;
@@ -237,7 +237,7 @@ $scale-xx-large: 2.5rem;
 $scale-xxx-large: 3rem;
 
 //spacing
-$spacing-xx-small: $scale-tiny;
+$spacing-xx-small: $scale-xx-small;
 $spacing-x-small:$scale-x-small;
 $spacing-small: $scale-small;
 $spacing-medium: $scale-medium;
@@ -254,7 +254,7 @@ $size-x-large: $scale-x-large;
 $size-xx-large: $scale-xx-large;
 // Border radious
 
-$radius-tiny:$scale-tiny;
+$radius-tiny:$scale-xx-small;
 $radius-small: $scale-x-small;
 $radius-medium: $scale-medium;
 $radius-large: $scale-large;
@@ -277,7 +277,7 @@ $fontWeight:normal !default;
 $textColor:$color-text-primary-light !default;
 $textSecondaryColor:$color-text-secondary-light !default;
 $borderRadius:$radius-small!default;
-$borderRadiusInput:$radius-small;
+$borderRadiusInput:$radius-tiny;
 $transitionDuration:.2s !default;
 $formElementTransition:background-color $transitionDuration, color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration !default;
 $actionIconTransition:background-color $transitionDuration, color $transitionDuration, box-shadow $transitionDuration !default;
@@ -381,7 +381,7 @@ $buttonTextActiveColor:$primaryTextColor !default;
 $buttonActiveBorderColor:$primaryDarkColor !default;
 $raisedButtonShadow:0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12) !default;
 $roundedButtonBorderRadius:2rem !default;
-$borderRadiusButton: $radius-small !default;
+$borderRadiusButton: $radius-tiny !default;
 
 $textButtonHoverBgOpacity:.04 !default;
 $textButtonActiveBgOpacity:.16 !default;
@@ -712,12 +712,12 @@ $paginatorPadding:.5rem 1rem !default;
 $paginatorElementWidth:$buttonIconOnlyWidth !default;
 $paginatorElementHeight:$buttonIconOnlyWidth !default;
 $paginatorElementBg:transparent !default;
-$paginatorElementBorder:0 none !default;
+$paginatorElementBorder:1 solid  !default;
 $paginatorElementIconColor:$textColor !default;
 $paginatorElementHoverBg:$color-surface-high-light !default;
 $paginatorElementHoverBorderColor:transparent !default;
 $paginatorElementIconHoverColor:$textColor !default;
-$paginatorElementBorderRadius:50% !default;
+$paginatorElementBorderRadius:$radius-small !default;
 $paginatorElementMargin:.143rem !default;
 $paginatorElementPadding:0 !default;
 
@@ -916,9 +916,9 @@ $menuitemTextColor:$color-text-primary-light
  !default;
 $menuitemIconColor:$color-text-primary-light
 !default;
-$menuitemTextHoverColor:white !default;
-$menuitemIconHoverColor:white!default;
-$menuitemHoverBg:$primaryColor !default;
+$menuitemTextHoverColor:$color-text-primary-light !default;
+$menuitemIconHoverColor:$color-text-primary-light!default;
+$menuitemHoverBg:$color-surface-high-light !default;
 $menuitemTextActiveColor:white !default;
 $menuitemIconActiveColor:white !default;
 $menuitemActiveBg:$primaryColor!default;

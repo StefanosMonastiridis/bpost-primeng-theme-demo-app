@@ -41,13 +41,19 @@ a {
         font-size: $size-medium !important;
         font-weight: 500 !important;
         line-height: 24px !important;
-        border-width: 2px!important;
+        border-width: 1px!important;
         border-style: solid!important;
         border-color: $color-outline-default-light!important;
+        border-radius: $borderRadiusButton!important;
+        
        &:hover{
         border-color: $color-primary-default-light!important;
        }
+   
     }
+    .p-button:not(:last-child){
+        margin-right: $spacing-x-small!important;
+       }
     .p-highlight{
         border-color: $color-primary-default-light!important;
     }
